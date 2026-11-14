@@ -1,0 +1,1292 @@
+[
+ {
+  "name": "age",
+  "title": "age",
+  "version": "1.2.1-1maemo1",
+  "section": "user/utilities",
+  "short": "age 1.2.1 simple file encryption (age, age-keygen)",
+  "description": "age 1.2.1: encrypts files with a passphrase (age -p file > file.age) or for public keys (age-keygen -o key.txt; age -r <public key> file > file.age;\nage -d -i key.txt file.age). Small, modern (X25519, ChaCha20-Poly1305), no configuration like gpg. Built for Maemo 5 with Go (static).\nUpstream: https://age-encryption.org",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 6260,
+  "size": 2664054,
+  "maintainer": "elPytel (build of upstream age by Filippo Valsorda and contributors)",
+  "upstream": "https://age-encryption.org",
+  "file": "age_1.2.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/age/age_1.2.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/age.png"
+ },
+ {
+  "name": "amfora",
+  "title": "Amfora",
+  "version": "1.11.0-1maemo1",
+  "section": "user/network",
+  "short": "amfora 1.11.0 browser for Gemini space",
+  "description": "Amfora 1.11.0: a terminal browser for the Gemini protocol (small, text-only pages over TLS 1.3, no ads, no scripts). Start it from the menu, press Ctrl-L\nor type a gemini:// address (for example gemini://geminiprotocol.net), Tab/Enter follow links, q quits, ? shows the keys. Servers are trusted on first use (TOFU).\nBuilt for Maemo 5 with Go (static). Upstream: https://github.com/makew0rld/amfora",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 16200,
+  "size": 5756856,
+  "maintainer": "elPytel (build of upstream amfora by makeworld and contributors)",
+  "upstream": "https://github.com/makew0rld/amfora",
+  "file": "amfora_1.11.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/amfora/amfora_1.11.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/amfora.png"
+ },
+ {
+  "name": "apt-n900",
+  "title": "apt-n900",
+  "version": "0.2-1maemo1",
+  "section": "user/system",
+  "short": "Friendly apt command (list --upgradable, search, show) over apt-get",
+  "description": "Adds /usr/bin/apt with the commands of modern apt: apt update, apt list --upgradable, apt upgrade, apt install, apt search, apt show, apt files, apt owns, and apt tui (apt-tui: a dialog based menu to upgrade, search, install and remove). It only calls apt-get, apt-cache and dpkg-query: nothing of the system package manager is replaced.",
+  "depends": [
+   "apt",
+   "dpkg",
+   "sudo",
+   "dialog"
+  ],
+  "installed_kb": 32,
+  "size": 4796,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "apt-n900_0.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/apt-n900/apt-n900_0.2-1maemo1_armel.deb",
+  "other_versions": [
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/apt-n900.png"
+ },
+ {
+  "name": "apt-transport-curl",
+  "title": "apt-transport-curl",
+  "version": "0.1-1maemo3",
+  "section": "user/system",
+  "short": "apt over HTTPS with TLS 1.2/1.3 (through curl 8)",
+  "description": "Replaces the apt method /usr/lib/apt/methods/https (old libcurl with OpenSSL 0.9.8, TLS 1.0 only) by a script that runs /usr/bin/curl. Repositories on GitHub Pages and other modern HTTPS servers then work with apt and the Application Manager.\nThe original method is kept as https.distrib and restored when the package is removed. Certificates are always verified (CA bundle of the curl package); Acquire::https::Curl-Insecure \"true\" turns it off, Acquire::https::CaInfo selects another bundle.",
+  "depends": [
+   "curl",
+   "apt-transport-https"
+  ],
+  "installed_kb": 60,
+  "size": 5526,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "apt-transport-curl_0.1-1maemo3_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/apt-transport-curl/apt-transport-curl_0.1-1maemo3_armel.deb",
+  "other_versions": [
+   "0.1-1maemo2",
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/apt-transport-curl.png"
+ },
+ {
+  "name": "bash5",
+  "title": "Bash 5",
+  "version": "5.3-1maemo1",
+  "section": "user/system",
+  "short": "GNU Bash 5.3 shell (next to the system bash 3.2)",
+  "description": "Modern Bash with associative arrays, mapfile, ${var@U}, printf %(...)T and so on.\nInstalled in /opt/bash5, started as bash5. The system /bin/bash 3.2 stays untouched.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)"
+  ],
+  "installed_kb": 1112,
+  "size": 579972,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "bash5_5.3-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/bash5/bash5_5.3-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/bash5.png"
+ },
+ {
+  "name": "bat",
+  "title": "bat",
+  "version": "0.26.1-1maemo2",
+  "section": "user/utilities",
+  "short": "bat 0.26.1 cat with syntax highlighting and line numbers",
+  "description": "bat 0.26.1: shows files like cat, but with syntax highlighting, line numbers and paging (bat script.py, bat -p README.md, bat --list-languages).\nBuilt for Maemo 5 with Rust as a static binary, without the git markers of the margin. The pager is cat by default (the less of the phone has no colour support): set BAT_PAGER to change it. Needs a terminal with colours (the menu terminal has them).\nUpstream: https://github.com/sharkdp/bat",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 5268,
+  "size": 3005896,
+  "maintainer": "elPytel (build of upstream bat by David Peter and contributors)",
+  "upstream": "https://github.com/sharkdp/bat",
+  "file": "bat_0.26.1-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/bat/bat_0.26.1-1maemo2_armel.deb",
+  "other_versions": [
+   "0.26.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/bat.png"
+ },
+ {
+  "name": "bt-kbmouse",
+  "title": "Keyboard and mouse",
+  "version": "0.1-1maemo1",
+  "section": "user/system",
+  "short": "Bluetooth keyboard and TrackPoint: layout, pointer, scrolling and settings",
+  "description": "Makes a Bluetooth keyboard with a TrackPoint (ThinkPad) usable: Shift, Caps Lock and AltGr, the Czech or US layout, a visible mouse pointer with\nadjustable speed, scrolling with the middle button, clicks. A service starts with the X server and takes over the keyboard when it connects; the application\nsets the speed, the layout and the pointer. Pair the keyboard first (see DOC/bluetooth-keyboard.md). Needs the patched evdev driver\nxserver-xorg-input-evdev-mouse (extras-testing).",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.4.0)",
+   "xserver-xorg-input-evdev-mouse"
+  ],
+  "installed_kb": 164,
+  "size": 31476,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "bt-kbmouse_0.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/bt-kbmouse/bt-kbmouse_0.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/bt-kbmouse.png"
+ },
+ {
+  "name": "busybox37",
+  "title": "BusyBox 1.37",
+  "version": "1.37.0-1maemo1",
+  "section": "user/system",
+  "short": "BusyBox 1.37.0 (modern coreutils, ash, awk, sed, tar, ...)",
+  "description": "BusyBox 1.37.0 next to the system busybox 1.23. Applets are linked in /opt/busybox37/bin;\nadd that directory to PATH to use them. /usr/bin/busybox37 runs the multi-call binary.",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 1080,
+  "size": 602520,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "busybox37_1.37.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/busybox37/busybox37_1.37.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/busybox37.png"
+ },
+ {
+  "name": "ca-certs-n900",
+  "title": "ca-certs-n900",
+  "version": "1.0-1maemo1",
+  "section": "user/system",
+  "short": "Current Mozilla root certificates for MicroB and other Maemo programs",
+  "description": "The phone has root certificates from 2010 and lacks about 117 current ones (ISRG Root X1, DigiCert G2/G3, GlobalSign R3, USERTrust and others).\nThe package adds the missing ones to the private certificate domain ssl-ca of the user (the Maemo certificate manager, read by MicroB); the system domain common-ca is not changed. Removing the package removes exactly these certificates.\nNote: MicroB speaks only TLS 1.0, so sites that disabled it still fail. Tool: ca-certs-n900 install|remove|status.",
+  "depends": [
+   "maemosec-certman-tools"
+  ],
+  "installed_kb": 532,
+  "size": 118486,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "ca-certs-n900_1.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ca-certs-n900/ca-certs-n900_1.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/ca-certs-n900.png"
+ },
+ {
+  "name": "camel-lite-ssl3",
+  "title": "Modest TLS 1.3 (camel-lite)",
+  "version": "1.1.92cssu7-2maemo1",
+  "section": "user/network",
+  "short": "camel-lite with OpenSSL 3: Modest with TLS 1.2/1.3 (replaces the system library, reversible)",
+  "description": "The mail library of the Modest e-mail client rebuilt with OpenSSL 3.5 (static) instead of the NSS 3.12 of the browser, which knows TLS 1.0 only. Servers such as Centrum (imap.centrum.cz, smtp.centrum.cz) then work in Modest. The system library is replaced by links, dpkg -r restores the originals. Restart Modest after install and remove.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libglib2.0-0",
+   "zlib1g",
+   "libtinymail-camel-1.0-0"
+  ],
+  "installed_kb": 4608,
+  "size": 2138998,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "camel-lite-ssl3_1.1.92cssu7-2maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/camel-lite-ssl3/camel-lite-ssl3_1.1.92cssu7-2maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/camel-lite-ssl3.png"
+ },
+ {
+  "name": "cbonsai",
+  "title": "cbonsai",
+  "version": "1.4.2-1maemo2",
+  "section": "user/other",
+  "short": "Bonsai tree generator for the terminal",
+  "description": "cbonsai grows a random bonsai tree in the terminal. Run cbonsai -l to watch it grow,\ncbonsai-live for an endless forest, cbonsai -h for the other options.\nBuilt for Maemo 5 (armel, glibc 2.5) with ncursesw linked statically.\nUpstream: https://gitlab.com/jallbrit/cbonsai",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 300,
+  "size": 110394,
+  "maintainer": "elPytel",
+  "upstream": "https://gitlab.com/jallbrit/cbonsai",
+  "file": "cbonsai_1.4.2-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/cbonsai/cbonsai_1.4.2-1maemo2_armel.deb",
+  "other_versions": [
+   "1.4.2-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/cbonsai.png"
+ },
+ {
+  "name": "cmatrix",
+  "title": "CMatrix",
+  "version": "2.0-1maemo2",
+  "section": "user/other",
+  "short": "Matrix-style falling characters in the terminal",
+  "description": "cmatrix shows scrolling characters like in the movie The Matrix. Press q to quit.\nOptions: -b bold, -C <colour>, -s screensaver mode (any key quits), -u <0-10> speed.\nBuilt for Maemo 5 (armel, glibc 2.5), dynamically linked against the system libncurses5.\nUpstream: https://github.com/abishekvashok/cmatrix",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)"
+  ],
+  "installed_kb": 164,
+  "size": 38382,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/abishekvashok/cmatrix",
+  "file": "cmatrix_2.0-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/cmatrix/cmatrix_2.0-1maemo2_armel.deb",
+  "other_versions": [
+   "2.0-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/cmatrix.png"
+ },
+ {
+  "name": "curl",
+  "title": "curl",
+  "version": "8.23.0-1maemo1",
+  "section": "user/network",
+  "short": "Command line tool for transferring data with URLs (TLS 1.3)",
+  "description": "curl 8.23.0 with mbedTLS 3.6.7, built for Maemo 5. Supports HTTPS with TLS 1.2/1.3,\nso it works with servers that the system OpenSSL 0.9.8 of the device cannot talk to.\nInstalled in /opt/curl, with a link /usr/bin/curl. Upstream: https://curl.se/",
+  "depends": [
+   "libc6 (>= 2.5.1-1eglibc27)"
+  ],
+  "installed_kb": 1500,
+  "size": 768150,
+  "maintainer": "elPytel",
+  "upstream": "https://curl.se/",
+  "file": "curl_8.23.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/curl/curl_8.23.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/curl.png"
+ },
+ {
+  "name": "dialog",
+  "title": "dialog",
+  "version": "1.3-20260721-1maemo1",
+  "section": "user/development",
+  "short": "dialog 1.3-20260721: dialog boxes for shell scripts",
+  "description": "dialog 1.3-20260721: text-mode menus, check lists, input boxes, message boxes, file selectors and gauges for shell scripts (dialog --menu, --checklist, --msgbox, --inputbox, --yesno). Full options: dialog --help. Built for Maemo 5 with a static ncursesw (UTF-8, line drawing).\nUpstream: https://invisible-island.net/dialog/",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 396,
+  "size": 187102,
+  "maintainer": "elPytel (build of upstream dialog by Thomas E. Dickey)",
+  "upstream": "https://invisible-island.net/dialog/",
+  "file": "dialog_1.3-20260721-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/dialog/dialog_1.3-20260721-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/dialog.png"
+ },
+ {
+  "name": "fd",
+  "title": "fd",
+  "version": "10.5.2-1maemo1",
+  "section": "user/utilities",
+  "short": "fd 10.5.2 simple, fast alternative to find",
+  "description": "fd 10.5.2: finds files by name with a regular expression, coloured output, respects .gitignore, skips hidden files and runs commands on the\nresults (fd -e png -x ls -l). Example: fd report ~/MyDocs   or   fd -e deb. Built for Maemo 5 with Rust as a static binary.\nUpstream: https://github.com/sharkdp/fd",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 3012,
+  "size": 1398796,
+  "maintainer": "elPytel (build of upstream fd by David Peter and contributors)",
+  "upstream": "https://github.com/sharkdp/fd",
+  "file": "fd_10.5.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/fd/fd_10.5.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/fd.png"
+ },
+ {
+  "name": "file",
+  "title": "file",
+  "version": "5.48-1maemo1",
+  "section": "user/utilities",
+  "short": "file 5.48 file type detection",
+  "description": "file 5.48 for Maemo 5: tells the type of a file from its content (file -b --mime-type photo.jpg). The magic database is in /opt/file/share/misc/magic.mgc.\nThe file manager ranger uses it for files with an unknown extension (the package ranger has only a small stand-in: this one takes precedence in /usr/bin).\nCompressed files are not looked into (no zlib/bzip2/xz in this build). Upstream: https://www.darwinsys.com/file/",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 10800,
+  "size": 551112,
+  "maintainer": "elPytel (build of upstream file by Christos Zoulas and contributors)",
+  "upstream": "https://www.darwinsys.com/file/",
+  "file": "file_5.48-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/file/file_5.48-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/file.png"
+ },
+ {
+  "name": "fzf",
+  "title": "fzf",
+  "version": "0.75.0-1maemo1",
+  "section": "user/utilities",
+  "short": "fzf 0.75.0 fuzzy finder for the command line",
+  "description": "fzf 0.75.0: an interactive filter for lists. Pipe anything into it (ls | fzf, history | fzf, find . -type f | fzf), type a few letters of the\nline you want and press Enter. With bash 5 the key bindings come from: eval \"$(fzf --bash)\" (Ctrl-R history, Ctrl-T files, Alt-C directories).\nBuilt for Maemo 5 with Go (static, GOARM=7, the 2.6.28 kernel needs the patched toolchain of this project). Upstream: https://github.com/junegunn/fzf",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 4464,
+  "size": 1784676,
+  "maintainer": "elPytel (build of upstream fzf by Junegunn Choi and contributors)",
+  "upstream": "https://github.com/junegunn/fzf",
+  "file": "fzf_0.75.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/fzf/fzf_0.75.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/fzf.png"
+ },
+ {
+  "name": "git",
+  "title": "git",
+  "version": "1:2.56.0-1maemo2",
+  "section": "user/development",
+  "short": "Distributed version control system (modern, HTTPS over TLS 1.3)",
+  "description": "git 2.56.0 built for Maemo 5, linked with libcurl and mbedTLS so that it can clone from\nHTTPS servers such as GitHub (the old git 1.6.2 of the device cannot). Installed in /opt/git,\nreplaces the git 1.6.2-1 package. Upstream: https://git-scm.com/",
+  "depends": [
+   "libc6 (>= 2.5.1-1eglibc27)",
+   "curl (>= 8.23.0)"
+  ],
+  "installed_kb": 19740,
+  "size": 10199642,
+  "maintainer": "elPytel",
+  "upstream": "https://git-scm.com/",
+  "file": "git_2.56.0-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/git/git_2.56.0-1maemo2_armel.deb",
+  "other_versions": [
+   "2.56.0-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/git.png"
+ },
+ {
+  "name": "gpodder",
+  "title": "gPodder Podcast Client",
+  "version": "2.20.3-2maemo4",
+  "section": "user/multimedia",
+  "short": "A podcast aggregator for the Nokia N900",
+  "description": "gPodder is a podcast receiver/catcher with a specialized UI that has been optimized for Maemo 5 and the N900.\nPodcasts are like short radio shows that you can download from the Internet and subscribe to like blogs or news feeds.\nVersion 2.20.3 \"The Odd Pod\" built from the upstream git tag obsolete/maemo5, with HTTPS through curl and YouTube through yt-dlp.\nUpstream: http://gpodder.org/",
+  "depends": [
+   "python (>= 2.5)",
+   "python-gobject",
+   "python-gtk2 (>= 2.12.1-6maemo10)",
+   "python-hildon (>= 0.9.0-1maemo12)",
+   "python-feedparser (>= 5.0.1)",
+   "python-dbus",
+   "python-osso",
+   "python-simplejson",
+   "python-mygpoclient (>= 1.4)",
+   "python-conic",
+   "curl",
+   "quickjs"
+  ],
+  "installed_kb": 2760,
+  "size": 631204,
+  "maintainer": "elPytel (build of upstream gPodder by Thomas Perl)",
+  "upstream": "http://gpodder.org/",
+  "file": "gpodder_2.20.3-2maemo4_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gpodder/gpodder_2.20.3-2maemo4_armel.deb",
+  "other_versions": [
+   "2.20.3-2maemo3",
+   "2.20.3-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/gpodder.png"
+ },
+ {
+  "name": "gurk",
+  "title": "gurk (Signal)",
+  "version": "0.10.2-1maemo1",
+  "section": "user/network",
+  "short": "gurk 0.10.2 Signal messenger client for the terminal",
+  "description": "gurk 0.10.2, a terminal client for the Signal messenger (a linked device of your account: scan the QR code on the first start).\nBuilt for Maemo 5 with Rust as a static binary (TLS 1.3, SQLite with encryption), 23 MB. It needs about 7 MB of RAM when idle; the first\nstart is slow (keys, first synchronisation). Keys: Tab/arrows to move, F1 help, Ctrl-C quits. Data is stored in ~/.config/gurk and ~/.local/share/gurk.\nUpstream: https://github.com/boxdot/gurk-rs",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 22776,
+  "size": 9751784,
+  "maintainer": "elPytel (build of upstream gurk-rs by boxdot and contributors)",
+  "upstream": "https://github.com/boxdot/gurk-rs",
+  "file": "gurk_0.10.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gurk/gurk_0.10.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gurk.png"
+ },
+ {
+  "name": "htop3",
+  "title": "htop 3",
+  "version": "3.5.3-1maemo2",
+  "section": "user/system",
+  "short": "Interactive process viewer (htop 3.x)",
+  "description": "htop is an interactive process viewer. This is htop 3.x built for Maemo 5, installed in\n/opt/htop3 next to the system htop 0.8.3. Start it with htop3 (refresh interval 5 s by default).\nUpstream: https://github.com/htop-dev/htop",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 528,
+  "size": 224328,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/htop-dev/htop",
+  "file": "htop3_3.5.3-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/htop3/htop3_3.5.3-1maemo2_armel.deb",
+  "other_versions": [
+   "3.5.3-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/htop3.png"
+ },
+ {
+  "name": "ical-sync",
+  "title": "Calendar sync",
+  "version": "0.1-1maemo2",
+  "section": "user/office",
+  "short": "Keep iCal calendars (Google Calendar, holidays) in the Maemo Calendar",
+  "description": "Follows iCal (.ics) addresses, for example the secret iCal address of a Google calendar or a public calendar, and keeps their events and\ntasks in the Maemo Calendar: new items are added, changed ones replaced, removed ones deleted; the past is kept for at most a month, the future as far\nas the feed goes. A job with cron checks every 30 minutes, only when the phone is online already (it never starts a connection), and updates each\ncalendar at its own interval. The application adds and removes the addresses, sets the interval and switches the log. The Czech public holidays are the\ndefault calendar. Command line: ical-sync (see ical-sync --help). Upstream: this project (MIT).",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.4.0)",
+   "calendar-backend",
+   "curl"
+  ],
+  "installed_kb": 152,
+  "size": 27100,
+  "maintainer": "elPytel",
+  "upstream": "this",
+  "file": "ical-sync_0.1-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ical-sync/ical-sync_0.1-1maemo2_armel.deb",
+  "other_versions": [
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/ical-sync.png"
+ },
+ {
+  "name": "irssi",
+  "title": "irssi",
+  "version": "1.4.5-1maemo1",
+  "section": "user/network",
+  "short": "irssi 1.4.5 IRC client",
+  "description": "irssi 1.4.5: the IRC client in the terminal. Start it in a terminal (irssi), then /connect -tls irc.libera.chat 6697, /join #channel,\n/help lists the commands. TLS 1.2/1.3 works (OpenSSL 3, CA bundle of the curl package; keep the phone clock correct, ntp-sync).\nBuilt for Maemo 5 with static GLib 2.66, OpenSSL 3 and ncursesw (UTF-8), no Perl. Upstream: https://irssi.org",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 6432,
+  "size": 2728726,
+  "maintainer": "elPytel (build of upstream irssi by the Irssi project)",
+  "upstream": "https://irssi.org",
+  "file": "irssi_1.4.5-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/irssi/irssi_1.4.5-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/irssi.png"
+ },
+ {
+  "name": "jq",
+  "title": "jq",
+  "version": "1.8.2-1maemo1",
+  "section": "user/utilities",
+  "short": "Command-line JSON processor",
+  "description": "jq 1.8.2 built for Maemo 5 (armel, glibc 2.5). Filters and transforms JSON,\nused for example with the Audiobookshelf API. Regular expressions via the bundled oniguruma.\nUpstream: https://jqlang.org/",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 804,
+  "size": 305120,
+  "maintainer": "elPytel",
+  "upstream": "https://jqlang.org/",
+  "file": "jq_1.8.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/jq/jq_1.8.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/jq.png"
+ },
+ {
+  "name": "libsignal-purple",
+  "title": "Signal (libpurple plugin)",
+  "version": "0.1-1maemo1",
+  "section": "user/network",
+  "short": "Signal in the Maemo messaging UI (libpurple plugin over signal-bridge)",
+  "description": "A libpurple protocol plugin that shows Signal as an account in Settings > Accounts and the chats in Conversations. It does no cryptography: it talks to the signal-bridge daemon, which it starts when needed (first connection takes about a minute). The device must be linked first (for example with gurk); do not run gurk at the same time as the account is online.\nRestart Mission Control or reboot after installing. Remove the package to undo (the haze.manager block is removed, a backup is kept as haze.manager.orig-signal).",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libpurple0",
+   "telepathy-haze",
+   "signal-bridge"
+  ],
+  "installed_kb": 128,
+  "size": 18534,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "libsignal-purple_0.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/libsignal-purple/libsignal-purple_0.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/libsignal-purple.png"
+ },
+ {
+  "name": "links",
+  "title": "Links",
+  "version": "2.30-1maemo1",
+  "section": "user/network",
+  "short": "links 2.30 text web browser with TLS 1.3",
+  "description": "Links 2.30, a text mode web browser with menus, tables and frames, for Maemo 5. HTTPS uses a private static OpenSSL 3, so modern\nsites (TLS 1.2/1.3) open, unlike in the stock browser. Start it from the menu or with: links https://example.org  (Esc opens the menu).\nCertificates are verified against the bundled Mozilla CA list (/opt/links/etc/cacert.pem, override with SSL_CERT_FILE).\nUpstream: http://links.twibright.com",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "zlib1g"
+  ],
+  "installed_kb": 4784,
+  "size": 2345350,
+  "maintainer": "elPytel (build of upstream Links by Mikulas Patocka and contributors)",
+  "upstream": "http://links.twibright.com",
+  "file": "links_2.30-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/links/links_2.30-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/links.png"
+ },
+ {
+  "name": "mc",
+  "title": "Midnight Commander",
+  "version": "1:4.8.33-1maemo2",
+  "section": "user/utilities",
+  "short": "mc 4.8.33 two-panel file manager",
+  "description": "Midnight Commander 4.8.33: file manager with two panels in the terminal (mc), the editor mcedit and the viewer mcview. Copy, move, search,\narchives (tar, zip, ...) as directories, FTP and SMB are not built in. F-keys work in xterm; where they do not, use Esc followed by a digit (Esc 1 = F1).\nBuilt for Maemo 5 with static GLib 2.66 and ncursesw (UTF-8), without X11, GPM, SFTP and NLS. Upstream: https://midnight-commander.org",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 4060,
+  "size": 1143468,
+  "maintainer": "elPytel (build of upstream mc by the Midnight Commander team)",
+  "upstream": "https://midnight-commander.org",
+  "file": "mc_4.8.33-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/mc/mc_4.8.33-1maemo2_armel.deb",
+  "other_versions": [
+   "4.8.33-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/mc.png"
+ },
+ {
+  "name": "micro",
+  "title": "Micro",
+  "version": "2.0.15-1maemo1",
+  "section": "user/text",
+  "short": "micro 2.0.15 terminal text editor with normal keys",
+  "description": "micro 2.0.15: a small editor for the terminal that works the way most people expect: Ctrl-S saves, Ctrl-Q quits, Ctrl-C/X/V copy, cut and\npaste, Ctrl-F searches, Ctrl-E opens a command line (help, set, plugin), the mouse works. Syntax highlighting for many languages. An easier alternative to vim\nand nano on the N900 (the Q key and the arrows are on the keyboard). Built for Maemo 5 with Go (static). Upstream: https://micro-editor.github.io",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 12520,
+  "size": 4945262,
+  "maintainer": "elPytel (build of upstream micro by Zachary Yedidia and contributors)",
+  "upstream": "https://micro-editor.github.io",
+  "file": "micro_2.0.15-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/micro/micro_2.0.15-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/micro.png"
+ },
+ {
+  "name": "microb-nss",
+  "title": "microb-nss",
+  "version": "3.28.6-1maemo2",
+  "section": "user/network",
+  "short": "NSS 3.28 with TLS 1.2 for the MicroB browser",
+  "description": "Replaces NSPR 4.8 / NSS 3.12 of the MicroB engine by NSPR 4.16 / NSS 3.28.6 (TLS 1.2, AES-GCM, ChaCha20, SSL 3.0 off), so that sites that dropped TLS 1.0 open in the stock browser. The stock libraries are kept in /usr/lib/microb-engine-orig (dpkg-divert) and come back when the package is removed. Restart the browser daemon after installing or removing: /etc/init.d/tablet-browser-daemon.init restart.\nTool: /opt/microb-nss/bin/psm-sim host port (a TLS test that sets NSS up as MicroB does, run it with LD_LIBRARY_PATH=/opt/microb-nss/lib).",
+  "depends": [
+   "libnss3",
+   "libnspr4"
+  ],
+  "installed_kb": 2800,
+  "size": 1343842,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "microb-nss_3.28.6-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/microb-nss/microb-nss_3.28.6-1maemo2_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/microb-nss.png"
+ },
+ {
+  "name": "msmtp",
+  "title": "msmtp",
+  "version": "1.8.34-1maemo1",
+  "section": "user/network",
+  "short": "msmtp 1.8.34 SMTP client (TLS 1.3), sendmail replacement",
+  "description": "msmtp 1.8.34 for Maemo 5 with OpenSSL 3. Sends mail through an SMTP server with login over TLS,\nfor example smtp.centrum.cz port 465. Mutt needs it because Mutt without Cyrus SASL cannot log in to SMTP.\nInstalled in /opt/msmtp, link /usr/bin/msmtp.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 3456,
+  "size": 1695336,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "msmtp_1.8.34-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/msmtp/msmtp_1.8.34-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/msmtp.png"
+ },
+ {
+  "name": "mutt",
+  "title": "Mutt",
+  "version": "2.4.3-1maemo2",
+  "section": "user/network",
+  "short": "Mutt 2.4.3 terminal e-mail client (IMAP/SMTP over TLS 1.3)",
+  "description": "Mutt 2.4.3 for Maemo 5 with OpenSSL 3, so it can talk to servers that require TLS 1.2 or newer\n(for example Centrum). Replaces the old mutt 1.5.20. Installed in /opt/mutt, link /usr/bin/mutt.\nExample configuration: /opt/mutt/share/doc/mutt/muttrc.centrum.example.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl",
+   "msmtp"
+  ],
+  "installed_kb": 4220,
+  "size": 2080740,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "mutt_2.4.3-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/mutt/mutt_2.4.3-1maemo2_armel.deb",
+  "other_versions": [
+   "2.4.3-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/mutt.png"
+ },
+ {
+  "name": "mutt-hildon",
+  "title": "Mail (Mutt)",
+  "version": "0.4-1maemo1",
+  "section": "user/network",
+  "short": "Hildon GUI for the Mutt/msmtp mail setup (IMAP over TLS 1.3)",
+  "description": "Finger friendly mail client for Maemo 5: INBOX list, reading, reply and new message. Mail is read with curl (modern TLS) and sent with msmtp, the settings come from ~/.muttrc and ~/.msmtp-password. The menu item Open Mutt starts the full terminal client.",
+  "depends": [
+   "python2.5",
+   "python-gtk2",
+   "python2.5-hildon",
+   "libsqlite3-0",
+   "curl",
+   "msmtp",
+   "mutt"
+  ],
+  "installed_kb": 132,
+  "size": 27044,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "mutt-hildon_0.4-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/mutt-hildon/mutt-hildon_0.4-1maemo1_armel.deb",
+  "other_versions": [
+   "0.3-1maemo1",
+   "0.2-1maemo1",
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/mutt-hildon.png"
+ },
+ {
+  "name": "nano",
+  "title": "nano",
+  "version": "9.3-1maemo1",
+  "section": "user/utilities",
+  "short": "GNU nano 9.3 text editor for the terminal",
+  "description": "GNU nano 9.3 for Maemo 5: an easy console editor with on-screen shortcuts (^O save, ^X quit, ^G help).\nUTF-8 text, syntax highlighting (/opt/nano/etc/nanorc) and the man page/info in /opt/nano/share. Built for armel, glibc 2.5.\nUpstream: https://www.nano-editor.org",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 1024,
+  "size": 332382,
+  "maintainer": "elPytel",
+  "upstream": "https://www.nano-editor.org",
+  "file": "nano_9.3-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/nano/nano_9.3-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/nano.png"
+ },
+ {
+  "name": "ncdu",
+  "title": "ncdu",
+  "version": "1.22-1maemo1",
+  "section": "user/utilities",
+  "short": "ncdu 1.22 disk usage browser",
+  "description": "ncdu 1.22 for Maemo 5: shows what takes the space on a disk, directory by directory (d deletes, q quits, ? help).\nThe menu entry scans /home/user; in a terminal: ncdu /opt, ncdu -x / (-x stays on one file system). Built for armel, glibc 2.5; ncurses comes from the phone.\nUpstream: https://dev.yorhel.nl/ncdu",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)"
+  ],
+  "installed_kb": 192,
+  "size": 49774,
+  "maintainer": "elPytel (build of upstream ncdu by Yoran Heling)",
+  "upstream": "https://dev.yorhel.nl/ncdu",
+  "file": "ncdu_1.22-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ncdu/ncdu_1.22-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/ncdu.png"
+ },
+ {
+  "name": "ntp-sync",
+  "title": "ntp-sync",
+  "version": "0.2-1maemo1",
+  "section": "user/system",
+  "short": "Set the clock over NTP (works without a SIM card)",
+  "description": "Sets the system clock and the RTC with the busybox ntpd. Runs automatically when a network connection comes up (at most every 10 minutes), or by hand: sudo ntp-sync.\nntp-sync -n only shows the offset. Servers: /etc/ntp-sync.conf.\nThe Maemo setting for automatic time uses the cellular network time (NITZ), not NTP.",
+  "depends": [
+   "busybox"
+  ],
+  "installed_kb": 60,
+  "size": 3534,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "ntp-sync_0.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ntp-sync/ntp-sync_0.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/ntp-sync.png"
+ },
+ {
+  "name": "openssh",
+  "title": "OpenSSH 10.6p2",
+  "version": "1:10.6p2-1maemo2",
+  "section": "user/network",
+  "short": "OpenSSH 10.6p2 client and server (modern ciphers, OpenSSL 3), alongside the system one",
+  "description": "OpenSSH 10.6p2 portable for Maemo 5 with a private static OpenSSL 3 and zlib, installed in /opt/openssh. The system OpenSSH 5.1 stays as it is.\nClient: ssh-modern, scp-modern, sftp-modern, ssh-keygen-modern (ed25519 keys, modern key exchange, works with current servers).\nServer: /opt/openssh/sbin/sshd on port 2222, keys only, no root login (see /opt/openssh/etc/sshd_config). It is not started by the package.\nNot tested on a real N900 when it was packaged: the sandbox of sshd is the rlimit one (the 2.6.28 kernel has no seccomp filter).",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 25100,
+  "size": 11573436,
+  "maintainer": "elPytel (build of upstream OpenSSH by the OpenBSD project)",
+  "upstream": "",
+  "file": "openssh_10.6p2-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/openssh/openssh_10.6p2-1maemo2_armel.deb",
+  "other_versions": [
+   "10.6p2-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/openssh.png"
+ },
+ {
+  "name": "profanity",
+  "title": "Profanity",
+  "version": "0.19.0-1maemo1",
+  "section": "user/network",
+  "short": "Profanity 0.19.0 XMPP (Jabber) client",
+  "description": "Profanity 0.19.0: an XMPP (Jabber) client in the terminal. Start it in a terminal (profanity), then /connect user@server.example (it asks for the\npassword), /msg user@server hello, /join room@conference.server. /help lists the commands. TLS 1.2/1.3 (OpenSSL 3, CA bundle of the curl package; keep the\nphone clock correct, ntp-sync). Built for Maemo 5 with static GLib, libstrophe, libcurl, SQLite, readline and ncursesw; no OMEMO, OTR, PGP or plugins.\nUpstream: https://profanity-im.github.io",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 10532,
+  "size": 4658160,
+  "maintainer": "elPytel (build of upstream Profanity by James Booth and contributors)",
+  "upstream": "https://profanity-im.github.io",
+  "file": "profanity_0.19.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/profanity/profanity_0.19.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/profanity.png"
+ },
+ {
+  "name": "purple-echo",
+  "title": "purple-echo",
+  "version": "0.1-1maemo1",
+  "section": "user/network",
+  "short": "Echo test protocol for the Maemo messaging UI (libpurple/haze)",
+  "description": "A test protocol (step 0 of the native Signal plan): a libpurple plugin with one contact, echo-bot, that answers every message with \"Echo: <text>\". It adds the protocol \"Echo (test)\" to telepathy-haze (haze.manager block, account profile, icon) to check that Settings > Accounts and Conversations show a protocol from a third-party plugin.\nThe Mission Control daemon reads the manager files at start: restart it or reboot after installing. Remove the package to undo (the haze.manager block is removed, a backup is kept as haze.manager.orig-echo).",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libpurple0",
+   "telepathy-haze"
+  ],
+  "installed_kb": 120,
+  "size": 12970,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "purple-echo_0.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/purple-echo/purple-echo_0.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/purple-echo.png"
+ },
+ {
+  "name": "python3-hildonlite",
+  "title": "hildonlite (Python 3)",
+  "version": "0.4.0-1maemo1",
+  "section": "user/development",
+  "short": "Hildon and GTK 2 windows from Python 3 (ctypes layer)",
+  "description": "Python module hildonlite: Window, Box, Label, Button, Entry (with completion), TextView, PannableArea, AppMenu, lists, dialogs and timers over GTK 2 and Hildon,\ncalled through ctypes, because PyGTK exists only for Python 2 and PyGObject has no GTK 2 / Hildon typelibs.\nUse: import hildonlite as hl. Examples: /opt/python3/share/doc/python3-hildonlite/examples. The same source installs with pip (pip install git+https://github.com/n900-resurrection/hildonlite).",
+  "depends": [
+   "python3.11"
+  ],
+  "installed_kb": 92,
+  "size": 12192,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "python3-hildonlite_0.4.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/python3-hildonlite/python3-hildonlite_0.4.0-1maemo1_armel.deb",
+  "other_versions": [
+   "0.3.0-1maemo1",
+   "0.1.0-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/python3-hildonlite.png"
+ },
+ {
+  "name": "python3.11",
+  "title": "Python 3.11",
+  "version": "3.11.18-2maemo1",
+  "section": "user/development",
+  "short": "Python 3.11.18 for Maemo 5 with TLS 1.3 (ssl), sqlite3, ctypes, readline and pip",
+  "description": "Python 3.11.18 built for the N900 in /opt/python3 (links /usr/bin/python3, python3.11). The ssl module uses OpenSSL 3.5, certificates come from the curl package. pip is included (pip3). The system Python 2.5 stays untouched.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 72288,
+  "size": 23763368,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "python3.11_3.11.18-2maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/python3.11/python3.11_3.11.18-2maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/python3.11.png"
+ },
+ {
+  "name": "quickjs",
+  "title": "QuickJS",
+  "version": "2026.06.04-1maemo1",
+  "section": "user/development",
+  "short": "Small JavaScript engine (ES2023), runtime for yt-dlp",
+  "description": "QuickJS 2026.06.04 built for Maemo 5 (armel, glibc 2.5): command qjs. Used by yt-dlp to solve the\nJavaScript challenges of YouTube. Upstream: https://bellard.org/quickjs/",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 884,
+  "size": 435800,
+  "maintainer": "elPytel",
+  "upstream": "https://bellard.org/quickjs/",
+  "file": "quickjs_2026.06.04-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/quickjs/quickjs_2026.06.04-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/quickjs.png"
+ },
+ {
+  "name": "ranger",
+  "title": "Ranger",
+  "version": "1.9.4-1maemo3",
+  "section": "user/utilities",
+  "short": "ranger 1.9.4 console file manager",
+  "description": "ranger 1.9.4, a console file manager with VI key bindings, for Maemo 5. It runs on the Python 3.11 of the package python3.11.\nRun ranger in the terminal (arrow keys or h j k l, q quits). Images, PDF, HTML, audio and video open in the applications of the phone (Image Viewer, PDF Viewer, Browser, Media Player), text in vim; only directories and plain text are previewed.\nUpstream: https://ranger.fm/",
+  "depends": [
+   "python3.11"
+  ],
+  "installed_kb": 2168,
+  "size": 556224,
+  "maintainer": "elPytel (build of upstream ranger by Roman Zimbelmann and contributors)",
+  "upstream": "https://ranger.fm/",
+  "file": "ranger_1.9.4-1maemo3_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ranger/ranger_1.9.4-1maemo3_armel.deb",
+  "other_versions": [
+   "1.9.4-1maemo2",
+   "1.9.4-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/ranger.png"
+ },
+ {
+  "name": "ripgrep",
+  "title": "ripgrep",
+  "version": "15.2.0-1maemo1",
+  "section": "user/utilities",
+  "short": "ripgrep 15.2.0 fast recursive text search (rg)",
+  "description": "ripgrep 15.2.0 (rg): searches directories recursively for a regular expression, respects .gitignore, skips binary and hidden files, and is\nmuch faster than grep -r. Example: rg -n 'TODO' ~/src   or   rg --files | rg png. Built for Maemo 5 with Rust as a static binary (without PCRE2).\nUpstream: https://github.com/BurntSushi/ripgrep",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 4084,
+  "size": 1769692,
+  "maintainer": "elPytel (build of upstream ripgrep by Andrew Gallant and contributors)",
+  "upstream": "https://github.com/BurntSushi/ripgrep",
+  "file": "ripgrep_15.2.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ripgrep/ripgrep_15.2.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/ripgrep.png"
+ },
+ {
+  "name": "rsync",
+  "title": "rsync",
+  "version": "3.5.2-1maemo1",
+  "section": "user/network",
+  "short": "rsync 3.5.2 file synchronisation over SSH",
+  "description": "rsync 3.5.2 for Maemo 5: copies and synchronises files and directories, sending only the differences (rsync -avz --progress ~/dir user@host:backup/).\nIt uses the ssh of the phone as the transport (the same rsync must be on the other side). Built for armel, glibc 2.5, without the optional compression\nand checksum libraries. Upstream: https://rsync.samba.org",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 536,
+  "size": 262028,
+  "maintainer": "elPytel (build of upstream rsync by Andrew Tridgell, Wayne Davison and contributors)",
+  "upstream": "https://rsync.samba.org",
+  "file": "rsync_3.5.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/rsync/rsync_3.5.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/rsync.png"
+ },
+ {
+  "name": "screen",
+  "title": "screen",
+  "version": "5.0.2-1maemo1",
+  "section": "user/utilities",
+  "short": "GNU screen 5.0.2 terminal multiplexer",
+  "description": "GNU screen 5.0.2: several programs in one terminal, detach and reattach later (screen, Ctrl-A d to detach, screen -r to come back, Ctrl-A c a new window,\nCtrl-A n/p next/previous, Ctrl-A [ scrollback). An alternative to tmux for people who know it. Sockets go to ~/.screen. Defaults in /opt/screen/etc/screenrc.\nBuilt for Maemo 5 with the ncurses of the phone. Upstream: https://www.gnu.org/software/screen",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5"
+  ],
+  "installed_kb": 400,
+  "size": 182218,
+  "maintainer": "elPytel (build of GNU screen)",
+  "upstream": "https://www.gnu.org/software/screen",
+  "file": "screen_5.0.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/screen/screen_5.0.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/screen.png"
+ },
+ {
+  "name": "selfie",
+  "title": "Selfie",
+  "version": "0.6-1maemo1",
+  "section": "user/multimedia",
+  "short": "Live preview of the front camera, a photo button and the camera button (test application)",
+  "description": "Shows what the camera sees (front by default, a button switches to the back one) and saves a JPEG to ~/MyDocs/DCIM. Written in Python 3 with hildonlite and GStreamer through ctypes, it is mainly a test of the cameras. The camera has one reader: close the stock Camera application first.",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.2.2)",
+   "gstreamer0.10-plugins-camera",
+   "libomap3cam"
+  ],
+  "installed_kb": 104,
+  "size": 17022,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "selfie_0.6-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/selfie/selfie_0.6-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/selfie.png"
+ },
+ {
+  "name": "sfeed",
+  "title": "sfeed",
+  "version": "2.4-1maemo4",
+  "section": "user/network",
+  "short": "sfeed 2.4 RSS/Atom feed and podcast reader for the terminal",
+  "description": "sfeed 2.4 for Maemo 5: small tools that parse RSS/Atom feeds into a plain format and a curses reader.\nFeeds are fetched with curl over TLS 1.3. Run sfeed-reader. Podcasts are normal feeds, the audio link is in the enclosure field.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)",
+   "curl"
+  ],
+  "installed_kb": 508,
+  "size": 102704,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "sfeed_2.4-1maemo4_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/sfeed/sfeed_2.4-1maemo4_armel.deb",
+  "other_versions": [
+   "2.4-1maemo3",
+   "2.4-1maemo2",
+   "2.4-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/sfeed.png"
+ },
+ {
+  "name": "sfeed-hildon",
+  "title": "Feed reader",
+  "version": "0.1-1maemo4",
+  "section": "user/network",
+  "short": "Native RSS/Atom and podcast feed reader on top of sfeed",
+  "description": "A touch reader for RSS and Atom feeds (and the text of podcast episodes). The feeds are downloaded by sfeed_update with curl, so\nmodern HTTPS servers (TLS 1.2 and 1.3) work, where the stock RSS reader and Feed Circuit fail with a TLS error. The application lists the feeds\nwith the number of new items, the items of a feed or all unread ones, shows the text of an item, opens its link in the browser, adds and removes\nfeeds (the list is ~/.sfeed/sfeedrc, shared with the terminal reader sfeed-reader), imports OPML and remembers what was read in the file that sfeed_markread uses.\nA job with cron (every 30 minutes, only when the phone is online already) can update the feeds in the background; the interval is set in the application.\nUpstream: this project (MIT).",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.4.0)",
+   "sfeed (>= 2.4-1maemo4)",
+   "curl"
+  ],
+  "installed_kb": 124,
+  "size": 26572,
+  "maintainer": "elPytel",
+  "upstream": "this",
+  "file": "sfeed-hildon_0.1-1maemo4_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/sfeed-hildon/sfeed-hildon_0.1-1maemo4_armel.deb",
+  "other_versions": [
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/sfeed-hildon.png"
+ },
+ {
+  "name": "signal-bridge",
+  "title": "signal-bridge",
+  "version": "0.1.0-1maemo1",
+  "section": "user/network",
+  "short": "Signal daemon (presage) with a local socket, for the messaging UI plugin",
+  "description": "signal-bridge 0.1.0: a daemon built on presage that serves a local unix socket (~/.local/share/signal-bridge/bridge.sock) with a simple line protocol. The package libsignal-purple uses it to show Signal in the Maemo messaging UI. It opens the store of an already linked device (the one of gurk: link the device with gurk first); do not run gurk and the daemon at the same time. Start by hand: signal-bridge-start (log: ~/.local/share/signal-bridge/daemon.log); commands: signal-bridge contacts, groups, whoami, messages.\nStatic ARMv7 musl binary. Upstream presage: https://github.com/whisperfish/presage (AGPL-3.0).",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 14784,
+  "size": 6483728,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "signal-bridge_0.1.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/signal-bridge/signal-bridge_0.1.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/signal-bridge.png"
+ },
+ {
+  "name": "smb",
+  "title": "SMB client",
+  "version": "1:0.1-1maemo2",
+  "section": "user/network",
+  "short": "SMB2/SMB3 command-line client (ls, get, put, ...)",
+  "description": "Small client for Windows/Samba/NAS shares over SMB 2 and 3 (NTLMSSP, signing and\nencryption of SMB 3), built on libsmb2 6.3 and statically linked. Commands: ls, get,\nput, rm, mkdir, rmdir, mv, stat, df. No SMB 1 and no kernel mount (the kernel has no cifs).\nUsage: smb ls smb://host/share/ ; smb -u user get smb://host/share/file",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 248,
+  "size": 88620,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "smb_0.1-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/smb/smb_0.1-1maemo2_armel.deb",
+  "other_versions": [
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/smb.png"
+ },
+ {
+  "name": "strace",
+  "title": "strace",
+  "version": "6.19-1maemo1",
+  "section": "user/utilities",
+  "short": "strace 6.19 system call tracer",
+  "description": "strace 6.19 for Maemo 5: shows the system calls and signals of a program (strace -f -o /tmp/out.txt command; strace -p PID).\nUseful when an application hangs or fails without a message. Built for armel (native ABI only), glibc 2.5.\nUpstream: https://strace.io",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 1048,
+  "size": 399000,
+  "maintainer": "elPytel (build of upstream strace by the strace project)",
+  "upstream": "https://strace.io",
+  "file": "strace_6.19-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/strace/strace_6.19-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/strace.png"
+ },
+ {
+  "name": "terminfo-256color",
+  "title": "terminfo-256color",
+  "version": "1.0-1maemo2",
+  "section": "user/system",
+  "short": "Terminfo for 256-colour terminals (xterm-256color, screen-256color, tmux-256color)",
+  "description": "The phone has only 8-colour terminfo entries, so programs that use more colours (ranger, cbonsai, tmux, vim with a colour scheme) fail with: Color number is greater than COLORS-1 (7).\nAdds xterm-256color, screen-256color and tmux-256color to /usr/share/terminfo (no system file is replaced). The package adds a small block to /home/user/.bashrc that switches TERM=xterm to xterm-256color (removed with the package); other shells: export TERM=xterm-256color",
+  "depends": [
+   "ncurses-base"
+  ],
+  "installed_kb": 52,
+  "size": 3110,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "terminfo-256color_1.0-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/terminfo-256color/terminfo-256color_1.0-1maemo2_armel.deb",
+  "other_versions": [
+   "1.0-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/terminfo-256color.png"
+ },
+ {
+  "name": "tig",
+  "title": "tig",
+  "version": "2.6.1-1maemo1",
+  "section": "user/development",
+  "short": "tig 2.6.1 text-mode interface for git",
+  "description": "tig 2.6.1: browse the history of a git repository, diffs, files and branches, stage changes line by line. Run it in a repository (tig, tig status,\ntig blame file, tig show). Keys: Enter opens, q closes, h shows the help. It uses the git of this repository's git package (modern git with HTTPS).\nBuilt for Maemo 5 with a static ncursesw (UTF-8). Upstream: https://jonas.github.io/tig",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "git"
+  ],
+  "installed_kb": 780,
+  "size": 263410,
+  "maintainer": "elPytel (build of upstream tig by Jonas Fonseca and contributors)",
+  "upstream": "https://jonas.github.io/tig",
+  "file": "tig_2.6.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/tig/tig_2.6.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/tig.png"
+ },
+ {
+  "name": "tmux",
+  "title": "tmux",
+  "version": "3.8-1maemo1",
+  "section": "user/utilities",
+  "short": "tmux 3.8 terminal multiplexer",
+  "description": "tmux 3.8 for Maemo 5: several terminal windows and panes in one screen, sessions that survive a closed terminal or a lost SSH connection.\nPrefix key Ctrl-b (c new window, n/p next/previous, % and \" split, d detach, tmux attach returns). libevent is built in, ncurses comes from the phone.\nUpstream: https://github.com/tmux/tmux",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)"
+  ],
+  "installed_kb": 1344,
+  "size": 540272,
+  "maintainer": "elPytel (build of upstream tmux by Nicholas Marriott and contributors)",
+  "upstream": "https://github.com/tmux/tmux",
+  "file": "tmux_3.8-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/tmux/tmux_3.8-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/tmux.png"
+ },
+ {
+  "name": "tty-clock",
+  "title": "tty-clock",
+  "version": "2.3-1maemo2",
+  "section": "user/utilities",
+  "short": "Digital clock for the terminal",
+  "description": "tty-clock shows a large digital clock in the terminal. Options: -s seconds, -c centered,\n-C <0-7> colour, -t 12 hour format, -b bold, -d <ms> refresh delay.\nBuilt for Maemo 5 (armel, glibc 2.5), dynamically linked against the system libncurses5.\nUpstream: https://github.com/xorg62/tty-clock",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)"
+  ],
+  "installed_kb": 136,
+  "size": 23452,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/xorg62/tty-clock",
+  "file": "tty-clock_2.3-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/tty-clock/tty-clock_2.3-1maemo2_armel.deb",
+  "other_versions": [
+   "2.3-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/tty-clock.png"
+ },
+ {
+  "name": "vim9",
+  "title": "Vim 9",
+  "version": "9.2.1302-1maemo1",
+  "section": "user/utilities",
+  "short": "Vim 9.2.1302 text editor for the terminal (command vim9)",
+  "description": "Vim 9 for Maemo 5 next to the system vim 7.2: the command is vim9 (the system vim and vi stay untouched). Normal features,\nUTF-8, syntax highlighting, no GUI and no scripting languages. The tool xxd is xxd9. Built for armel, glibc 2.5.\nSettings: /opt/vim9/share/vim/vimrc (the mouse is off), personal ~/.vimrc. Upstream: https://www.vim.org",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libncurses5 (>= 5.7)"
+  ],
+  "installed_kb": 31736,
+  "size": 7572372,
+  "maintainer": "elPytel",
+  "upstream": "https://www.vim.org",
+  "file": "vim9_9.2.1302-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/vim9/vim9_9.2.1302-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/vim9.png"
+ },
+ {
+  "name": "weechat",
+  "title": "WeeChat",
+  "version": "4.10.4-1maemo1",
+  "section": "user/network",
+  "short": "WeeChat 4.10.4 chat client (IRC)",
+  "description": "WeeChat 4.10.4: an extensible chat client in the terminal. Start it in a terminal (weechat), then /server add libera irc.libera.chat/6697 -tls,\n/connect libera, /join #channel. /help lists the commands. TLS 1.2/1.3 (GnuTLS, CA bundle of the curl package; keep the phone clock correct, ntp-sync).\nBuilt for Maemo 5 with static GnuTLS, libgcrypt, libcurl and ncursesw (UTF-8); no scripting languages, no relay, no spell checker. Upstream: https://weechat.org",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 11140,
+  "size": 5592198,
+  "maintainer": "elPytel (build of upstream WeeChat by Sébastien Helleu)",
+  "upstream": "https://weechat.org",
+  "file": "weechat_4.10.4-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/weechat/weechat_4.10.4-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/weechat.png"
+ },
+ {
+  "name": "wget",
+  "title": "Wget",
+  "version": "1.25.0-1maemo1",
+  "section": "user/network",
+  "short": "GNU Wget 1.25.0 (HTTPS with TLS 1.3)",
+  "description": "GNU Wget 1.25.0 for Maemo 5, linked with OpenSSL 3. Upgrades wget 1.10.2 of the device.\nInstalled in /opt/wget, with a link /usr/bin/wget. Certificates: /opt/curl/etc/ssl/cacert.pem.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 3788,
+  "size": 1870724,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "wget_1.25.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/wget/wget_1.25.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/wget.png"
+ },
+ {
+  "name": "whiptail",
+  "title": "whiptail",
+  "version": "0.52.25-1maemo1",
+  "section": "user/development",
+  "short": "whiptail (newt 0.52.25): dialog boxes for shell scripts",
+  "description": "whiptail from newt 0.52.25: text-mode menus, check lists, input boxes, message boxes and gauges for shell scripts (whiptail --menu, --checklist, --msgbox, --inputbox, --yesno), compatible with the common dialog options. Small: slang and popt are linked statically.\nUpstream: https://pagure.io/newt",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 272,
+  "size": 82268,
+  "maintainer": "elPytel (build of upstream newt by Red Hat and contributors)",
+  "upstream": "https://pagure.io/newt",
+  "file": "whiptail_0.52.25-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/whiptail/whiptail_0.52.25-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/whiptail.png"
+ },
+ {
+  "name": "wireguard-go",
+  "title": "WireGuard (wireguard-go)",
+  "version": "0.0.20250522-1maemo1",
+  "section": "user/network",
+  "short": "wireguard-go 0.0.20250522: WireGuard VPN in user space, with wg and wg-n900",
+  "description": "WireGuard VPN for the N900: wireguard-go 0.0.20250522 (the Go implementation, static) with the wg tool and the helper wg-n900 up|down, which sets\nup the interface and routes with the busybox ip of the phone. The kernel 2.6.28 has no WireGuard module, so everything runs in user space over /dev/net/tun.\nNeeds a WireGuard server (a home router, a VPS). See /opt/wireguard-go/share/doc/wireguard-go/README.Maemo. Upstream: https://www.wireguard.com",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 3180,
+  "size": 1323394,
+  "maintainer": "elPytel (build of upstream wireguard-go and wireguard-tools by Jason A. Donenfeld)",
+  "upstream": "https://www.wireguard.com",
+  "file": "wireguard-go_0.0.20250522-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/wireguard-go/wireguard-go_0.0.20250522-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/wireguard-go.png"
+ },
+ {
+  "name": "wordgrinder",
+  "title": "WordGrinder",
+  "version": "0.8-1maemo2",
+  "section": "user/office",
+  "short": "Console word processor",
+  "description": "WordGrinder is a simple, Unicode-aware word processor that runs on the console.\nBuilt for Maemo 5 (armel, glibc 2.5) with ncursesw linked statically.\nUpstream: https://github.com/davidgiven/wordgrinder",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "zlib1g"
+  ],
+  "installed_kb": 864,
+  "size": 273670,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/davidgiven/wordgrinder",
+  "file": "wordgrinder_0.8-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/wordgrinder/wordgrinder_0.8-1maemo2_armel.deb",
+  "other_versions": [
+   "0.8-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/wordgrinder.png"
+ },
+ {
+  "name": "xml-tools",
+  "title": "XML tools",
+  "version": "2.15.4-1maemo1",
+  "section": "user/utilities",
+  "short": "xmllint and xsltproc (libxml2 2.15.4, libxslt 1.1.45)",
+  "description": "Command-line XML tools built for Maemo 5 (armel, glibc 2.5), statically linked:\nxmllint (well-formedness, XPath, pretty-printing, schema validation) and xsltproc (XSLT 1.0 with EXSLT).\nThe system libxml2 2.6.32 stays untouched.\nUpstream: https://gitlab.gnome.org/GNOME/libxml2",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 1808,
+  "size": 849002,
+  "maintainer": "elPytel",
+  "upstream": "https://gitlab.gnome.org/GNOME/libxml2",
+  "file": "xml-tools_2.15.4-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/xml-tools/xml-tools_2.15.4-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/xml-tools.png"
+ }
+]

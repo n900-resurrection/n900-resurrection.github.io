@@ -1,0 +1,31 @@
+# N900 Resurrection: a blog about bringing the Nokia N900 (Maemo 5) back, and the catalogue of the packages of its apt repository.
+title: N900 Resurrection
+title_main: N900
+title_accent: Resurrection
+description: Modern software for the Nokia N900, ported, packaged and tested on real devices.
+lang: en
+url: https://n900-resurrection.github.io
+baseurl: ""
+remote_theme: n900-resurrection/maemo-theme
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+footer: "N900 Resurrection, a hobby project; software is under the licences of its upstream authors"
+nav:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Packages
+    url: /packages/
+  - title: GitHub
+    url: https://github.com/n900-resurrection
+    external: true
+exclude:
+  - README.md
+  - dev-build.sh
+  - Gemfile
+  - Gemfile.lock
+  - vendor
