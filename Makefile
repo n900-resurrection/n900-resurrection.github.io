@@ -31,13 +31,15 @@ FLAGS  := $(CONFIG) $(if $(DRAFTS),--drafts)
 _config.local.yml: _config.yml
 	@sed '/^remote_theme:/d; /jekyll-remote-theme/d' _config.yml > $@
 
-.PHONY: help install install-system deps catalogue build serve doctor new-post check clean
+.PHONY: help install install-system deps catalogue update build serve doctor new-post publish check clean
 .DEFAULT_GOAL := help
 
 help:
 	@printf "$(CYAN)Targets:$(RESET)\n"
 	@printf "  $(BOLD)install$(RESET)     - install the Ruby gems (bundle install); build, serve and doctor do it by themselves when gems are missing\n"
 	@printf "  $(BOLD)install-system$(RESET) - install Ruby, bundler and build tools with apt (sudo), once per computer\n"
+	@printf "  $(BOLD)update$(RESET)      - everything before a publication: regenerate the catalogue, build, check the links, show what changed (commit and push by hand)\n"
+	@printf "  $(BOLD)publish$(RESET)     - move a draft to _posts/ with today's date: make publish DRAFT=_drafts/2026-11-14-title.md\n"
 	@printf "  $(BOLD)catalogue$(RESET)   - regenerate the package catalogue from the pool of the repository ($(N900_REPO)); run after make repo\n"
 	@printf "  $(BOLD)build$(RESET)       - build the site into _site/ (DRAFTS=1 includes _drafts/, but Jekyll 3 then cannot resolve post_url links; REMOTE=1 uses the theme from GitHub)\n"
 	@printf "  $(BOLD)serve$(RESET)       - local server with live reload at http://127.0.0.1:$(PORT) (PORT=4001 when 4000 is taken; DRAFTS=1 adds _drafts/)\n"
@@ -68,8 +70,18 @@ install:
 catalogue:
 	@test -f $(N900_REPO)/scripts/mksite.py || { printf "$(RED)the main repository is not at $(N900_REPO): make catalogue N900_REPO=/path/to/nokia-n900-apps$(RESET)\n"; exit 1; }
 	@printf "$(CYAN)Generating the package catalogue from $(N900_REPO)/n900-repository/pool ...$(RESET)\n"
-	python3 $(N900_REPO)/scripts/mksite.py --pool $(N900_REPO)/n900-repository/pool --site .
+	python3 $(N900_REPO)/scripts/mksite.py --pool $(N900_REPO)/n900-repository/pool --icons $(N900_REPO)/icons/packages --site .
 	@printf "$(YELLOW)Review with git diff and commit: _data/packages.json, packages/, assets/packages/icons/$(RESET)\n"
+
+# the usual update after make repo in the main repository: catalogue, build, check; the commit and the push stay with you
+update: catalogue check
+	@printf "\n$(CYAN)What changed:$(RESET)\n"
+	@git status --short | head -30
+	@git diff --stat | tail -3
+	@printf "\n$(GREEN)Looks right?$(RESET) Commit and publish with:\n  git add -A && git commit -m \"Catalogue update\" && git push\n"
+
+publish:
+	@./publish.sh "$(DRAFT)"
 
 build: deps $(LOCALCFG)
 	@printf "$(CYAN)Building the site into _site/ ...$(RESET)\n"

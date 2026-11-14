@@ -10,7 +10,7 @@
    "libc6"
   ],
   "installed_kb": 6260,
-  "size": 2664054,
+  "size": 2666658,
   "maintainer": "elPytel (build of upstream age by Filippo Valsorda and contributors)",
   "upstream": "https://age-encryption.org",
   "file": "age_1.2.1-1maemo1_armel.deb",
@@ -29,7 +29,7 @@
    "libc6"
   ],
   "installed_kb": 16200,
-  "size": 5756856,
+  "size": 5756860,
   "maintainer": "elPytel (build of upstream amfora by makeworld and contributors)",
   "upstream": "https://github.com/makew0rld/amfora",
   "file": "amfora_1.11.0-1maemo1_armel.deb",
@@ -51,7 +51,7 @@
    "dialog"
   ],
   "installed_kb": 32,
-  "size": 4796,
+  "size": 7388,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "apt-n900_0.2-1maemo1_armel.deb",
@@ -73,7 +73,7 @@
    "apt-transport-https"
   ],
   "installed_kb": 60,
-  "size": 5526,
+  "size": 8062,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "apt-transport-curl_0.1-1maemo3_armel.deb",
@@ -96,7 +96,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 1112,
-  "size": 579972,
+  "size": 582440,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bash5_5.3-1maemo1_armel.deb",
@@ -115,7 +115,7 @@
    "libc6"
   ],
   "installed_kb": 5268,
-  "size": 3005896,
+  "size": 3008470,
   "maintainer": "elPytel (build of upstream bat by David Peter and contributors)",
   "upstream": "https://github.com/sharkdp/bat",
   "file": "bat_0.26.1-1maemo2_armel.deb",
@@ -138,7 +138,7 @@
    "xserver-xorg-input-evdev-mouse"
   ],
   "installed_kb": 164,
-  "size": 31476,
+  "size": 34620,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bt-kbmouse_0.1-1maemo1_armel.deb",
@@ -157,7 +157,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1080,
-  "size": 602520,
+  "size": 605044,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "busybox37_1.37.0-1maemo1_armel.deb",
@@ -176,7 +176,7 @@
    "maemosec-certman-tools"
   ],
   "installed_kb": 532,
-  "size": 118486,
+  "size": 121026,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "ca-certs-n900_1.0-1maemo1_armel.deb",
@@ -198,7 +198,7 @@
    "libtinymail-camel-1.0-0"
   ],
   "installed_kb": 4608,
-  "size": 2138998,
+  "size": 2141498,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "camel-lite-ssl3_1.1.92cssu7-2maemo1_armel.deb",
@@ -217,7 +217,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 300,
-  "size": 110394,
+  "size": 110400,
   "maintainer": "elPytel",
   "upstream": "https://gitlab.com/jallbrit/cbonsai",
   "file": "cbonsai_1.4.2-1maemo2_armel.deb",
@@ -239,7 +239,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 164,
-  "size": 38382,
+  "size": 38374,
   "maintainer": "elPytel",
   "upstream": "https://github.com/abishekvashok/cmatrix",
   "file": "cmatrix_2.0-1maemo2_armel.deb",
@@ -260,7 +260,7 @@
    "libc6 (>= 2.5.1-1eglibc27)"
   ],
   "installed_kb": 1500,
-  "size": 768150,
+  "size": 770552,
   "maintainer": "elPytel",
   "upstream": "https://curl.se/",
   "file": "curl_8.23.0-1maemo1_armel.deb",
@@ -279,7 +279,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 396,
-  "size": 187102,
+  "size": 189802,
   "maintainer": "elPytel (build of upstream dialog by Thomas E. Dickey)",
   "upstream": "https://invisible-island.net/dialog/",
   "file": "dialog_1.3-20260721-1maemo1_armel.deb",
@@ -298,7 +298,7 @@
    "libc6"
   ],
   "installed_kb": 3012,
-  "size": 1398796,
+  "size": 1401258,
   "maintainer": "elPytel (build of upstream fd by David Peter and contributors)",
   "upstream": "https://github.com/sharkdp/fd",
   "file": "fd_10.5.2-1maemo1_armel.deb",
@@ -317,7 +317,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 10800,
-  "size": 551112,
+  "size": 553650,
   "maintainer": "elPytel (build of upstream file by Christos Zoulas and contributors)",
   "upstream": "https://www.darwinsys.com/file/",
   "file": "file_5.48-1maemo1_armel.deb",
@@ -336,7 +336,7 @@
    "libc6"
   ],
   "installed_kb": 4464,
-  "size": 1784676,
+  "size": 1787250,
   "maintainer": "elPytel (build of upstream fzf by Junegunn Choi and contributors)",
   "upstream": "https://github.com/junegunn/fzf",
   "file": "fzf_0.75.0-1maemo1_armel.deb",
@@ -356,7 +356,7 @@
    "curl (>= 8.23.0)"
   ],
   "installed_kb": 19740,
-  "size": 10199642,
+  "size": 10202312,
   "maintainer": "elPytel",
   "upstream": "https://git-scm.com/",
   "file": "git_2.56.0-1maemo2_armel.deb",
@@ -388,7 +388,7 @@
    "quickjs"
   ],
   "installed_kb": 2760,
-  "size": 631204,
+  "size": 633988,
   "maintainer": "elPytel (build of upstream gPodder by Thomas Perl)",
   "upstream": "http://gpodder.org/",
   "file": "gpodder_2.20.3-2maemo4_armel.deb",
@@ -410,7 +410,7 @@
    "libc6"
   ],
   "installed_kb": 22776,
-  "size": 9751784,
+  "size": 9751790,
   "maintainer": "elPytel (build of upstream gurk-rs by boxdot and contributors)",
   "upstream": "https://github.com/boxdot/gurk-rs",
   "file": "gurk_0.10.2-1maemo1_armel.deb",
@@ -429,7 +429,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 528,
-  "size": 224328,
+  "size": 224322,
   "maintainer": "elPytel",
   "upstream": "https://github.com/htop-dev/htop",
   "file": "htop3_3.5.3-1maemo2_armel.deb",
@@ -453,7 +453,7 @@
    "curl"
   ],
   "installed_kb": 152,
-  "size": 27100,
+  "size": 30672,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "ical-sync_0.1-1maemo2_armel.deb",
@@ -475,7 +475,7 @@
    "curl"
   ],
   "installed_kb": 6432,
-  "size": 2728726,
+  "size": 2731202,
   "maintainer": "elPytel (build of upstream irssi by the Irssi project)",
   "upstream": "https://irssi.org",
   "file": "irssi_1.4.5-1maemo1_armel.deb",
@@ -494,7 +494,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 804,
-  "size": 305120,
+  "size": 307680,
   "maintainer": "elPytel",
   "upstream": "https://jqlang.org/",
   "file": "jq_1.8.2-1maemo1_armel.deb",
@@ -516,7 +516,7 @@
    "signal-bridge"
   ],
   "installed_kb": 128,
-  "size": 18534,
+  "size": 21052,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "libsignal-purple_0.1-1maemo1_armel.deb",
@@ -536,7 +536,7 @@
    "zlib1g"
   ],
   "installed_kb": 4784,
-  "size": 2345350,
+  "size": 2345360,
   "maintainer": "elPytel (build of upstream Links by Mikulas Patocka and contributors)",
   "upstream": "http://links.twibright.com",
   "file": "links_2.30-1maemo1_armel.deb",
@@ -555,7 +555,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 4060,
-  "size": 1143468,
+  "size": 1145862,
   "maintainer": "elPytel (build of upstream mc by the Midnight Commander team)",
   "upstream": "https://midnight-commander.org",
   "file": "mc_4.8.33-1maemo2_armel.deb",
@@ -576,7 +576,7 @@
    "libc6"
   ],
   "installed_kb": 12520,
-  "size": 4945262,
+  "size": 4945258,
   "maintainer": "elPytel (build of upstream micro by Zachary Yedidia and contributors)",
   "upstream": "https://micro-editor.github.io",
   "file": "micro_2.0.15-1maemo1_armel.deb",
@@ -596,7 +596,7 @@
    "libnspr4"
   ],
   "installed_kb": 2800,
-  "size": 1343842,
+  "size": 1346306,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "microb-nss_3.28.6-1maemo2_armel.deb",
@@ -616,7 +616,7 @@
    "curl"
   ],
   "installed_kb": 3456,
-  "size": 1695336,
+  "size": 1697808,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "msmtp_1.8.34-1maemo1_armel.deb",
@@ -637,7 +637,7 @@
    "msmtp"
   ],
   "installed_kb": 4220,
-  "size": 2080740,
+  "size": 2080726,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "mutt_2.4.3-1maemo2_armel.deb",
@@ -664,7 +664,7 @@
    "mutt"
   ],
   "installed_kb": 132,
-  "size": 27044,
+  "size": 29432,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "mutt-hildon_0.4-1maemo1_armel.deb",
@@ -687,7 +687,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1024,
-  "size": 332382,
+  "size": 332384,
   "maintainer": "elPytel",
   "upstream": "https://www.nano-editor.org",
   "file": "nano_9.3-1maemo1_armel.deb",
@@ -707,7 +707,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 192,
-  "size": 49774,
+  "size": 49784,
   "maintainer": "elPytel (build of upstream ncdu by Yoran Heling)",
   "upstream": "https://dev.yorhel.nl/ncdu",
   "file": "ncdu_1.22-1maemo1_armel.deb",
@@ -726,7 +726,7 @@
    "busybox"
   ],
   "installed_kb": 60,
-  "size": 3534,
+  "size": 6146,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "ntp-sync_0.2-1maemo1_armel.deb",
@@ -745,7 +745,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 25100,
-  "size": 11573436,
+  "size": 11576050,
   "maintainer": "elPytel (build of upstream OpenSSH by the OpenBSD project)",
   "upstream": "",
   "file": "openssh_10.6p2-1maemo2_armel.deb",
@@ -767,7 +767,7 @@
    "curl"
   ],
   "installed_kb": 10532,
-  "size": 4658160,
+  "size": 4660702,
   "maintainer": "elPytel (build of upstream Profanity by James Booth and contributors)",
   "upstream": "https://profanity-im.github.io",
   "file": "profanity_0.19.0-1maemo1_armel.deb",
@@ -788,7 +788,7 @@
    "telepathy-haze"
   ],
   "installed_kb": 120,
-  "size": 12970,
+  "size": 15402,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "purple-echo_0.1-1maemo1_armel.deb",
@@ -807,7 +807,7 @@
    "python3.11"
   ],
   "installed_kb": 92,
-  "size": 12192,
+  "size": 14400,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "python3-hildonlite_0.4.0-1maemo1_armel.deb",
@@ -830,7 +830,7 @@
    "curl"
   ],
   "installed_kb": 72288,
-  "size": 23763368,
+  "size": 23765836,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "python3.11_3.11.18-2maemo1_armel.deb",
@@ -849,7 +849,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 884,
-  "size": 435800,
+  "size": 438282,
   "maintainer": "elPytel",
   "upstream": "https://bellard.org/quickjs/",
   "file": "quickjs_2026.06.04-1maemo1_armel.deb",
@@ -868,7 +868,7 @@
    "python3.11"
   ],
   "installed_kb": 2168,
-  "size": 556224,
+  "size": 556220,
   "maintainer": "elPytel (build of upstream ranger by Roman Zimbelmann and contributors)",
   "upstream": "https://ranger.fm/",
   "file": "ranger_1.9.4-1maemo3_armel.deb",
@@ -890,7 +890,7 @@
    "libc6"
   ],
   "installed_kb": 4084,
-  "size": 1769692,
+  "size": 1772132,
   "maintainer": "elPytel (build of upstream ripgrep by Andrew Gallant and contributors)",
   "upstream": "https://github.com/BurntSushi/ripgrep",
   "file": "ripgrep_15.2.0-1maemo1_armel.deb",
@@ -909,7 +909,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 536,
-  "size": 262028,
+  "size": 264428,
   "maintainer": "elPytel (build of upstream rsync by Andrew Tridgell, Wayne Davison and contributors)",
   "upstream": "https://rsync.samba.org",
   "file": "rsync_3.5.2-1maemo1_armel.deb",
@@ -929,7 +929,7 @@
    "libncurses5"
   ],
   "installed_kb": 400,
-  "size": 182218,
+  "size": 184636,
   "maintainer": "elPytel (build of GNU screen)",
   "upstream": "https://www.gnu.org/software/screen",
   "file": "screen_5.0.2-1maemo1_armel.deb",
@@ -951,7 +951,7 @@
    "libomap3cam"
   ],
   "installed_kb": 104,
-  "size": 17022,
+  "size": 19502,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "selfie_0.6-1maemo1_armel.deb",
@@ -998,7 +998,7 @@
    "curl"
   ],
   "installed_kb": 124,
-  "size": 26572,
+  "size": 29824,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "sfeed-hildon_0.1-1maemo4_armel.deb",
@@ -1019,7 +1019,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 14784,
-  "size": 6483728,
+  "size": 6486204,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "signal-bridge_0.1.0-1maemo1_armel.deb",
@@ -1038,7 +1038,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 248,
-  "size": 88620,
+  "size": 91160,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "smb_0.1-1maemo2_armel.deb",
@@ -1059,7 +1059,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1048,
-  "size": 399000,
+  "size": 401412,
   "maintainer": "elPytel (build of upstream strace by the strace project)",
   "upstream": "https://strace.io",
   "file": "strace_6.19-1maemo1_armel.deb",
@@ -1078,7 +1078,7 @@
    "ncurses-base"
   ],
   "installed_kb": 52,
-  "size": 3110,
+  "size": 5468,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "terminfo-256color_1.0-1maemo2_armel.deb",
@@ -1100,7 +1100,7 @@
    "git"
   ],
   "installed_kb": 780,
-  "size": 263410,
+  "size": 266070,
   "maintainer": "elPytel (build of upstream tig by Jonas Fonseca and contributors)",
   "upstream": "https://jonas.github.io/tig",
   "file": "tig_2.6.1-1maemo1_armel.deb",
@@ -1120,7 +1120,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 1344,
-  "size": 540272,
+  "size": 540278,
   "maintainer": "elPytel (build of upstream tmux by Nicholas Marriott and contributors)",
   "upstream": "https://github.com/tmux/tmux",
   "file": "tmux_3.8-1maemo1_armel.deb",
@@ -1140,7 +1140,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 136,
-  "size": 23452,
+  "size": 23446,
   "maintainer": "elPytel",
   "upstream": "https://github.com/xorg62/tty-clock",
   "file": "tty-clock_2.3-1maemo2_armel.deb",
@@ -1161,8 +1161,8 @@
    "libc6 (>= 2.5)",
    "libncurses5 (>= 5.7)"
   ],
-  "installed_kb": 31736,
-  "size": 7572372,
+  "installed_kb": 31740,
+  "size": 7572368,
   "maintainer": "elPytel",
   "upstream": "https://www.vim.org",
   "file": "vim9_9.2.1302-1maemo1_armel.deb",
@@ -1182,7 +1182,7 @@
    "curl"
   ],
   "installed_kb": 11140,
-  "size": 5592198,
+  "size": 5594750,
   "maintainer": "elPytel (build of upstream WeeChat by Sébastien Helleu)",
   "upstream": "https://weechat.org",
   "file": "weechat_4.10.4-1maemo1_armel.deb",
@@ -1202,7 +1202,7 @@
    "curl"
   ],
   "installed_kb": 3788,
-  "size": 1870724,
+  "size": 1873260,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "wget_1.25.0-1maemo1_armel.deb",
@@ -1221,7 +1221,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 272,
-  "size": 82268,
+  "size": 84770,
   "maintainer": "elPytel (build of upstream newt by Red Hat and contributors)",
   "upstream": "https://pagure.io/newt",
   "file": "whiptail_0.52.25-1maemo1_armel.deb",
@@ -1240,7 +1240,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 3180,
-  "size": 1323394,
+  "size": 1325982,
   "maintainer": "elPytel (build of upstream wireguard-go and wireguard-tools by Jason A. Donenfeld)",
   "upstream": "https://www.wireguard.com",
   "file": "wireguard-go_0.0.20250522-1maemo1_armel.deb",
@@ -1260,7 +1260,7 @@
    "zlib1g"
   ],
   "installed_kb": 864,
-  "size": 273670,
+  "size": 273668,
   "maintainer": "elPytel",
   "upstream": "https://github.com/davidgiven/wordgrinder",
   "file": "wordgrinder_0.8-1maemo2_armel.deb",
@@ -1281,7 +1281,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1808,
-  "size": 849002,
+  "size": 851440,
   "maintainer": "elPytel",
   "upstream": "https://gitlab.gnome.org/GNOME/libxml2",
   "file": "xml-tools_2.15.4-1maemo1_armel.deb",
