@@ -25,7 +25,11 @@ nav:
     external: true
 exclude:
   - README.md
-  - dev-build.sh
+  - Makefile
+  - newpost.sh
+  - scripts
+  - _config.dev.yml
+  - _config.local.yml
   - Gemfile
   - Gemfile.lock
   - vendor

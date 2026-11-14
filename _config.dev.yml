@@ -1,0 +1,3 @@
+# Added by the Makefile for local builds (with _config.local.yml, which is _config.yml without remote_theme): the theme comes from THEME_PATH (a gem path), links stay local.
+theme: maemo-theme
+url: ""
