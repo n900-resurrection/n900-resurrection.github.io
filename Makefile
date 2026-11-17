@@ -70,7 +70,7 @@ install:
 catalogue:
 	@test -f $(N900_REPO)/scripts/mksite.py || { printf "$(RED)the main repository is not at $(N900_REPO): make catalogue N900_REPO=/path/to/nokia-n900-apps$(RESET)\n"; exit 1; }
 	@printf "$(CYAN)Generating the package catalogue from $(N900_REPO)/n900-repository/pool ...$(RESET)\n"
-	python3 $(N900_REPO)/scripts/mksite.py --pool $(N900_REPO)/n900-repository/pool --icons $(N900_REPO)/icons/packages --site .
+	python3 $(N900_REPO)/scripts/mksite.py --pool $(N900_REPO)/n900-repository/pool --icons $(N900_REPO)/icons/packages --web-icons $(N900_REPO)/icons/web --apps $(N900_REPO)/apps --site .
 	@printf "$(YELLOW)Review with git diff and commit: _data/packages.json, packages/, assets/packages/icons/$(RESET)\n"
 
 # the usual update after make repo in the main repository: catalogue, build, check; the commit and the push stay with you
