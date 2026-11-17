@@ -33,6 +33,11 @@ A phone that does not start, or that you want to reset to the last official Noki
   - [Nokia N900 Demo guide](https://github.com/n900-resurrection/nokia-n900-notes/raw/main/doc/Nokia%20Demo%20guide.pdf) (24 pages, 1.6 MB): Nokia's own tour of the phone and of Maemo 5.
   - [Nokia N900 Commented Hardware specs](https://github.com/n900-resurrection/nokia-n900-notes/raw/main/doc/Nokia%20N900%20Commented%20Hardware%20specs.pdf) (28 pages, 10 MB): every component of the N900 and how the Linux kernel and the Maemo 5 binaries support it (a page of the Maemo community wiki saved in 2015).
 
+- **Service manual and circuit diagrams** of the N900 (RX-51), meant for Nokia's service centres (repairs, board layout, test points). Linked, not hosted here:
+  [Scribd](https://www.scribd.com/doc/246840487/Nokia-N900-RX-51-Schematics#page=1) (a download needs an account),
+  [ManualsLib](https://www.manualslib.com/manual/867693/Nokia-N900.html),
+  [ManualMachine](https://manualmachine.com/nokia/n900/4545339-service-manual). A free, unofficial and unfinished redrawing from the Neo900 project:
+  [n900-wip-2014061922.pdf](https://neo900.org/stuff/werner/tmp/n900-wip-2014061922.pdf). An example of what you can do with them: [the backup battery of the clock]({{ site.baseurl }}{% post_url 2026-11-17-the-n900-clock-that-forgets-the-time %}).
 - The **notes** this guide grew from: [nokia-n900-notes](https://github.com/n900-resurrection/nokia-n900-notes) (an archive).
 - **r/N900** on Reddit: an active community, where this project started.
 - **Maemo Leste**: a modern Debian-based Linux with the Hildon desktop, also for the N900 and a few other phones. It is a different system from Maemo 5, packages here do not run on it.
