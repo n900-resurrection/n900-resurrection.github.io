@@ -62,7 +62,8 @@ components = free non-free
 ```
 
 {: .warning}
-> The catalogue files follow the install files I have been using on the N900 for years (see the notes). The variant with `package` is the format of my old `mc.install`; I have not tried it with these mirrors on a freshly set up phone. If an install file does nothing, add the catalogue by hand under *Application catalogues* with the values above.
+> The catalogue files follow the install files I have been using on the N900 for years (see the notes). The variant with `package` I tried on a test phone with two catalogues: it offered and installed `xml-tools` from our repository, and for `bounce` from the Nokia catalogue mirror
+> (an install file for [Bounce Evolution]({{ site.baseurl }}{% post_url 2026-11-17-bounce-evolution-on-the-n900 %}); a flat repository, `dist = ./`) it added the catalogue and found the package. If an install file does nothing for you, add the catalogue by hand under *Application catalogues* with the values above.
 
 ## One for every package
 

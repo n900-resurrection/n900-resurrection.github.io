@@ -48,7 +48,7 @@ Remove it with `dpkg -r bounce`.
 ### With an install file
 
 The Application Manager can also fetch it from the Nokia catalogue mirror: [bounce-evolution.install]({{ '/install/bounce-evolution.install' | relative_url }}) adds the catalogue and offers the package, as in
-[Install files]({{ '/guide/install-files/' | relative_url }}). The catalogue has all the old Nokia "Ovi" apps of the Maemo 5 times, not only this game.
+[Install files]({{ '/guide/install-files/' | relative_url }}). The catalogue has all the old Nokia "Ovi" apps of the Maemo 5 times, not only this game. (I tried it on a test phone: the Application Manager added the catalogue, prepared the installation and found the package; the game was installed already by hand, so it told me so.)
 
 ## What came after
 
