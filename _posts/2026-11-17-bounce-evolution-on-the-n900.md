@@ -7,6 +7,15 @@ tags: [n900, maemo, games, bounce, rovio]
 **Bounce Evolution** is a small 3D game that **Rovio Mobile** made for the N900 in 2009. Nokia published it (the Bounce trademark is Nokia's), first as a beta that N900 owners could get for free from the Ovi Store.
 It was meant to show what the graphics chip of the N900 can do, and it was never developed into a full game; it stayed a *technology demo*. The Ovi Store is long gone, so here is where the game can still be found and how to put it on a phone.
 
+<div class="gallery">
+{% include figure.html src="bounce/watermill.webp" alt="Bounce Evolution: a red ball on a path near a watermill" caption="The first level: a red ball, a watermill and a wooden bridge" %}
+{% include figure.html src="bounce/bridge.webp" alt="Bounce Evolution: the character on a wooden bridge over water, with a windmill behind" caption="The character on the bridge, with a windmill in the distance" %}
+{% include figure.html src="bounce/red-ball.webp" alt="Bounce Evolution: the red ball rolling towards a bridge" caption="Rolling towards the bridge" %}
+{% include figure.html src="bounce/waterfall.webp" alt="Bounce Evolution: a waterfall with flowers and a butterfly" caption="A waterfall with a butterfly" %}
+</div>
+
+The pictures are screenshots from my N900 (800 x 480). For hardware from 2009 it runs surprisingly well.
+
 ## What it is
 
 The package says "Playable 3D technology demo for N900". From what the community has written down about it (the fan port Redbound documents it well):
