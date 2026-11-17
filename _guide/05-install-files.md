@@ -20,13 +20,13 @@ file for our repository needs [`curl` and `apt-transport-curl`](../software-setu
 
 Use **one** mirror of a repository at a time, and add Extras-testing or Extras-devel only when you need a package from there (their lists are large, see [Software setup](../software-setup/)).
 
-| Repository | plan9 mirror (2017) | h4ck1ng.me mirror (2026) |
-|---|---|---|
-| Extras | [extras-plan9.install]({{ '/install/extras-plan9.install' | relative_url }}) | [extras-h4ck1ng.install]({{ '/install/extras-h4ck1ng.install' | relative_url }}) |
-| Extras-testing | [extras-testing-plan9.install]({{ '/install/extras-testing-plan9.install' | relative_url }}) | [extras-testing-h4ck1ng.install]({{ '/install/extras-testing-h4ck1ng.install' | relative_url }}) |
-| Extras-devel | [extras-devel-plan9.install]({{ '/install/extras-devel-plan9.install' | relative_url }}) | [extras-devel-h4ck1ng.install]({{ '/install/extras-devel-h4ck1ng.install' | relative_url }}) |
-| Community SSU (testing) | [community-testing-plan9.install]({{ '/install/community-testing-plan9.install' | relative_url }}) | |
-| **N900 Resurrection** (needs `curl` + `apt-transport-curl`) | [n900-resurrection.install]({{ '/install/n900-resurrection.install' | relative_url }}) | |
+| Repository | plan9 mirror (2017) | h4ck1ng.me mirror (2026) | viniciuspaes.com mirror |
+|---|---|---|---|
+| Extras | [extras-plan9.install]({{ '/install/extras-plan9.install' | relative_url }}) | [extras-h4ck1ng.install]({{ '/install/extras-h4ck1ng.install' | relative_url }}) | [extras-viniciuspaes.install]({{ '/install/extras-viniciuspaes.install' | relative_url }}) |
+| Extras-testing | [extras-testing-plan9.install]({{ '/install/extras-testing-plan9.install' | relative_url }}) | [extras-testing-h4ck1ng.install]({{ '/install/extras-testing-h4ck1ng.install' | relative_url }}) | [extras-testing-viniciuspaes.install]({{ '/install/extras-testing-viniciuspaes.install' | relative_url }}) |
+| Extras-devel | [extras-devel-plan9.install]({{ '/install/extras-devel-plan9.install' | relative_url }}) | [extras-devel-h4ck1ng.install]({{ '/install/extras-devel-h4ck1ng.install' | relative_url }}) | [extras-devel-viniciuspaes.install]({{ '/install/extras-devel-viniciuspaes.install' | relative_url }}) |
+| Community SSU (testing) | [community-testing-plan9.install]({{ '/install/community-testing-plan9.install' | relative_url }}) | | |
+| **N900 Resurrection** (needs `curl` + `apt-transport-curl`) | [n900-resurrection.install]({{ '/install/n900-resurrection.install' | relative_url }}) | | |
 
 ## What is inside
 

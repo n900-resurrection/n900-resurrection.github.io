@@ -26,6 +26,7 @@ The community applications (Extras) live on mirrors of the old server. Distribut
 |---|---|---|
 | plan9 | `http://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/extras/` | snapshot of September 2017 |
 | h4ck1ng.me | `http://n900.h4ck1ng.me/extras/` | snapshot of March 2026; run by an active member of the r/N900 community |
+| viniciuspaes.com | `http://maemo.viniciuspaes.com/extras/` | copy of the original server; also firmware, flasher and the SDK (see [Resources](../resources/)) |
 
 `extras-testing/` and `extras-devel/` exist on both too. Add them **only when you need a package from there**: their indexes are large (Extras-devel about 29 MB, Extras-testing about 9 MB) and the refresh gets slow.
 **Do not type the addresses on the phone:** the [install files]({{ '/guide/install-files/' | relative_url }}) add a mirror (and can install an application from it) with one tap. Both mirrors are plain HTTP and unsigned, `apt-get update` prints `NO_PUBKEY` warnings (expected). More in [First ssh connection]({{ site.baseurl }}{% post_url 2026-11-13-first-ssh-connection-to-the-n900 %}).
