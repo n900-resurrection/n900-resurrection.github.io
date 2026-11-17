@@ -24,15 +24,15 @@ According to the author of the repair (joerg_rw), these parts break after 12 to 
 
 What the dead part costs you, in the words of the thread:
 
-- the **date and time** are lost whenever the main battery is out (or empty for a while);
-- an **alarm** set to switch the phone on from the off state is lost too;
+- the **date and time** are lost whenever the main battery is out (or empty for a while),
+- an **alarm** set to switch the phone on from the off state is lost too,
 - **nothing else.** A phone with a broken backup battery "works flawlessly" otherwise.
 
 One more claim from the thread, that I could not verify: a faulty part may also **drain the main battery** faster. A poster who had this on another Nokia says replacing it fixed both. If your battery life is poor and the clock keeps resetting, it is a cheap thing to try.
 
 ## First, the cheap options
 
-1. **Live with it and set the clock.** After a battery swap `ntp-sync` (or `ntpd -s` with the package `openntpd`) sets the time over the network; some people simply run it every time.
+1. **Live with it and set the clock.** After a battery swap `ntp-sync` (or `ntpd -s` with the package `openntpd`) sets the time over the network, some people simply run it every time.
 2. **Remove the dead part.** If you cannot solder a new one, taking the old one off is the least you can do (it may stop the drain and removes the risk of a leak). The phone then simply loses the time like a phone with a dead one.
 3. **Replace it.** The rest of this article.
 
@@ -41,7 +41,7 @@ One more claim from the thread, that I could not verify: a faulty part may also 
 The forum does not agree. The author of the repair calls the original a rechargeable **lithium coin cell**. Another poster insists it is a **capacitor** ("most devices have a 0.2 F 3 V capacitor instead of a battery"), and the schematic symbol is a battery
 with the label `2.6/3.3V`. It does not change the repair: what the replacement must do is hold about **3.3 V maximum** and be charged by the phone.
 
-{% include figure.html src="rtc/schematic-bkbat.jpg" alt="Part of the circuit diagram with the backup battery G4210 on the BKBAT line" caption="In the circuit diagram the part (G4210, 2.6/3.3 V) hangs on the BKBAT line of the power chip; the + side is at the top." %}
+{% include figure.html src="rtc/schematic-bkbat.jpg" alt="Part of the circuit diagram with the backup battery G4210 on the BKBAT line" caption="In the circuit diagram the part (G4210, 2.6/3.3 V) hangs on the BKBAT line of the power chip, the + side is at the top." %}
 
 The power chip (TPS65950) accepts a backup supply between **1.8 V and 3.3 V** (3.2 V typical):
 
@@ -82,7 +82,7 @@ One poster measured it on a phone with a new capacitor from the original batch: 
 i2cset -f -y 1 0x4b 0x12 0x1f b
 ```
 
-You need the package `i2c-tools` (it is in Extras); run it as root. I have **not tried it** and I do not know whether the setting survives a reboot. In the thread it has to be repeated at every start, for example from a boot script
+You need the package `i2c-tools` (it is in Extras), run it as root. I have **not tried it** and I do not know whether the setting survives a reboot. In the thread it has to be repeated at every start, for example from a boot script
 (the upstart job or `/etc/init.d`). If you test it, please tell me how it went.
 
 {: .warning}
@@ -99,6 +99,12 @@ You need the package `i2c-tools` (it is in Extras); run it as root. I have **not
 
 - [HW-FIX: losing time/date on battery swap? Replace bupbat](https://talk.maemo.org/showthread.php?t=90864), five pages of the thread by joerg_rw and others (2013 to 2020).
 - [Nokia N900 Back-Up Battery Replacement?](https://talk.maemo.org/showthread.php?t=92199), a short follow-up with the same recommendation (2013).
-- The pictures are excerpts from the circuit diagrams of the N900 (RX-51), its service manual and the data sheet of the TPS65950; they are shown here for illustration.
+- The circuit diagrams and the service manual of the N900 (RX-51), originally meant for Nokia's service centres. Nokia no longer sells or supports them, but the copies circulate:
+  [Nokia N900 RX-51 Schematics on Scribd](https://www.scribd.com/doc/246840487/Nokia-N900-RX-51-Schematics#page=1) (needs a Scribd account to download),
+  [Service Schematics RX-51 on ManualsLib](https://www.manualslib.com/manual/867693/Nokia-N900.html) and
+  [the RX-51 service manual on ManualMachine](https://manualmachine.com/nokia/n900/4545339-service-manual).
+  A free, redrawn version made for the Neo900 project: [n900-wip-2014061922.pdf](https://neo900.org/stuff/werner/tmp/n900-wip-2014061922.pdf) (unofficial and unfinished).
+  I link to them and do not host them.
+- The pictures are excerpts from the circuit diagrams of the N900 (RX-51), its service manual and the data sheet of the TPS65950, they are shown here for illustration.
 
-The forum is protected against automated readers, so I took the text from the Internet Archive copy; a page may be cut or out of date. If you repair your phone this way, I would be glad for a photo and a note.
+The forum is protected against automated readers, so I took the text from the Internet Archive copy, a page may be cut or out of date. If you repair your phone this way, I would be glad for a photo and a note.

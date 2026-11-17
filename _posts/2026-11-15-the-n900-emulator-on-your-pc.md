@@ -76,8 +76,9 @@ the emulator therefore uses a **stand-in**: a dark theme of the kit (black, whit
 With your own N900 on the network, run this once and the emulator uses the real theme and fonts from then on:
 
 ```sh
-make hildon-overlay DEVICE=root@192.168.1.50        # theme, fonts, icons, Python 2.5 with PyGTK from the phone (~100 MB)
+make hildon-overlay DEVICE=root@<ip-of-your-phone>
 ```
+Will copy the theme, fonts, icons, Python 2.5 with PyGTK from the phone (~100 MB).
 
 ![The same application with the theme of the phone]({{ '/assets/img/emulator-phone-theme-list.png' | relative_url }})
 
