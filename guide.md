@@ -7,6 +7,6 @@ permalink: /guide/
 <ol class="guide-list">
 {% assign pages = site.guide | sort: "order" %}
 {% for p in pages %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.summary %}<span class="meta">{{ p.summary }}</span>{% endif %}</li>
+  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.summary %}<br><span class="meta">{{ p.summary }}</span>{% endif %}</li>
 {% endfor %}
 </ol>
