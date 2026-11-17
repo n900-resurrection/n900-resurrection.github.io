@@ -1,0 +1,9 @@
+[install]
+catalogues = n900
+package = jq
+
+[n900]
+name = N900 Resurrection
+uri = https://n900-resurrection.github.io/n900-repository
+dist = fremantle
+components = main

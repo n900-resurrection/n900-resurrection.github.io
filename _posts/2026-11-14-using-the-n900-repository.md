@@ -5,7 +5,7 @@ author: elPytel
 tags: [n900, maemo, apt, repository]
 ---
 The packages of this project are served as a normal apt repository on GitHub Pages: <https://n900-resurrection.github.io/n900-repository>. A phone can use it like any apt source,
-with one catch, explained below. This page is how I set it up on real N900s; I tested these exact steps on a clean second phone.
+with one catch, explained below. This page is how I set it up on real N900s. I tested these exact steps on a clean second phone.
 
 ## Why two packages first
 
@@ -43,7 +43,8 @@ apt cannot reach the repository yet, so these two files are installed by hand. D
 dpkg -i curl_8.23.0-1maemo1_armel.deb apt-transport-curl_0.1-1maemo4_armel.deb
 ```
 
-`apt-transport-curl` needs `curl`, `bash3`, `coreutils-gnu` and the system package `apt-transport-https` (a stock Maemo 5 has the last one). Make sure the **clock is right** (for example with `ntp-sync`), or the certificate check fails.
+{: .warning}
+> `apt-transport-curl` needs `curl`, `bash3`, `coreutils-gnu` and the system package `apt-transport-https` (a stock Maemo 5 has the last one). Make sure the **clock is right** (for example with `ntp-sync`), or the certificate check fails.
 
 ## Step 2: add the source and update
 
@@ -64,33 +65,25 @@ Run the check that comes with `apt-transport-curl` (as root):
 apt-transport-curl-check
 ```
 
-It prints the state of the installation and changes nothing: the three packages, the method files (`https` should be our script of about 5 kB, `https.distrib` the original of about 25 kB),
-the handshake with apt, a test download over TLS, the clock, free memory, and the last lines of the method's error log. The result is a list of `[ ok ]` and `[FAIL]` lines and a `RESULT:` line
-that you can paste into a bug report. If `curl` is missing the method says so (`install the package curl`) instead of dying silently.
+It prints the state of the installation and changes nothing: the three packages, the method files (`https` should be our script of about 5 kB, `https.distrib` the original of about 25 kB), the handshake with apt, a test download over TLS, the clock, free memory, and the last lines of the method's error log. The result is a list of `[ ok ]` and `[FAIL]` lines and a `RESULT:` line that you can paste into a bug report. If `curl` is missing the method says so (`install the package curl`) instead of dying silently.
 
 ## The Application Manager
 
-[`n900-repository.install`](https://n900-resurrection.github.io/n900-repository/n900-repository.install) adds the catalogue to the built-in Application Manager and offers `apt-transport-curl`
-(open the file from the file manager). The Application Manager pulls `curl` in as a dependency. Use **`apt-transport-curl` 0.1-1maemo4 or newer** (the hang was fixed in 1maemo3, 1maemo4 adds the dependencies): up to 0.1-1maemo2 the Application Manager
-could hang for ever on "Preparing installation". The cause was a small race: the method wrote its first message to apt in two pieces (the lines, then the empty line that ends a message),
-and the `apt-worker` of the Application Manager, woken by the first piece, read it, did not see the end of the message and never looked again. `apt-get` copes with a message in pieces, so
-it worked in a terminal. Since 0.1-1maemo3 every message goes out in a single `write()`.
+[`n900-repository.install`](https://n900-resurrection.github.io/n900-repository/n900-repository.install) adds the catalogue to the built-in Application Manager and offers `apt-transport-curl` (open the file from the file manager). The Application Manager pulls `curl` in as a dependency. Use **`apt-transport-curl` 0.1-1maemo4 or newer** (the hang was fixed in 1maemo3, 1maemo4 adds the dependencies): up to 0.1-1maemo2 the Application Manager could hang for ever on "Preparing installation". The cause was a small race: the method wrote its first message to apt in two pieces (the lines, then the empty line that ends a message), and the `apt-worker` of the Application Manager, woken by the first piece, read it, did not see the end of the message and never looked again. `apt-get` copes with a message in pieces, so it worked in a terminal. Since 0.1-1maemo3 every message goes out in a single `write()`.
 
 If the Application Manager still hangs for you, install with `apt-get` in a terminal and tell me what `apt-transport-curl-check` says.
 
-## Keep the list of repositories short and alive
+### Keep the list of repositories short and alive
 
-Maemo 5 ships with addresses of repositories that no longer exist (`downloads.maemo.nokia.com`, `repository.maemo.org`, the Ovi store). Every refresh tries them, waits for DNS errors, refused
-connections and timeouts, and the Application Manager sits on "Checking for updates" much longer than it should. A reader who traced such a hang found it mostly came from these dead sources,
-and from the huge development indexes (Extras-devel is about 29 MB of text, Extras-testing about 9 MB; the apt cache shrank from 24 MB to 3.5 MB after they were switched off).
+Maemo 5 ships with addresses of repositories that no longer exist (`downloads.maemo.nokia.com`, `repository.maemo.org`, the Ovi store). Every refresh tries them, waits for DNS errors, refused connections and timeouts, and the Application Manager sits on "Checking for updates" much longer than it should. A reader who traced such a hang found it mostly came from these dead sources, and from the huge development indexes (Extras-devel is about 29 MB of text, Extras-testing about 9 MB; the apt cache shrank from 24 MB to 3.5 MB after they were switched off).
 
-So my advice: **remove every default repository and keep only the ones that are alive and that you trust**: the Maemo mirror
-[plan9]({{ site.baseurl }}{% post_url 2026-11-13-first-ssh-connection-to-the-n900 %}) (Extras; take Extras-testing and Extras-devel only when you need a package from there), this repository, and any other that is still maintained.
+So my advice: **remove every default repository and keep only the ones that are alive and that you trust**: the Maemo mirror [plan9]({{ site.baseurl }}{% post_url 2026-11-13-first-ssh-connection-to-the-n900 %}) (Extras; take Extras-testing and Extras-devel only when you need a package from there), this repository, and any other that is still maintained. Extras has a second mirror in case plan9 is down: **`http://n900.h4ck1ng.me/extras/`** (same layout, `fremantle free non-free`; likewise `extras-testing/` and `extras-devel/`), run by a
+member of the r/N900 community. Use one mirror at a time. It is plain HTTP like plan9; I checked that its index and a package download work.
+
 A repository you cannot name the owner of should not be on the list: every package is installed as root.
 
 - **apt** (terminal): look at `/etc/apt/sources.list` and the files in `/etc/apt/sources.list.d/`, delete or comment out the dead lines, then `apt-get update`.
-- **Application Manager**: it regenerates `/etc/apt/sources.list.d/hildon-application-manager.list` from its catalogue files, so editing that file does not last. Turn entries off in its own list
-  (Application catalogues, then edit or delete), or, as the reader did, mark the built-in entries in `/etc/hildon-application-manager/catalogues` with `<disabled/>`:
+- **Application Manager**: it regenerates `/etc/apt/sources.list.d/hildon-application-manager.list` from its catalogue files, so editing that file does not last. Turn entries off in its own list (Application catalogues, then edit or delete), or, as the reader did, mark the built-in entries in `/etc/hildon-application-manager/catalogues` with `<disabled/>`:
 
 ```xml
 <catalogue>
@@ -100,12 +93,11 @@ A repository you cannot name the owner of should not be on the list: every packa
 </catalogue>
 ```
 
-  (I have not tried this file edit myself; back it up first.) The old Nokia archives also report expired signing keys. That is a separate warning and not the cause of a hang.
+(I have not tried this file edit myself; back it up first.) The old Nokia archives also report expired signing keys. That is a separate warning and not the cause of a hang.
 
-## The Fast Application Manager
+### The Fast Application Manager
 
-The Fast Application Manager (`fapman`) keeps **its own list of repositories** (`/root/.fapman/repos.list`), not the system one. To see our packages there, add the line
-`deb https://n900-resurrection.github.io/n900-repository fremantle main` to its repositories and refresh. It runs `apt-get`, so the HTTPS method above is used.
+The Fast Application Manager (`fapman`) keeps **its own list of repositories** (`/root/.fapman/repos.list`), not the system one. To see our packages there, add the line `deb https://n900-resurrection.github.io/n900-repository fremantle main` to its repositories and refresh. It runs `apt-get`, so the HTTPS method above is used.
 
 One more thing about versions: community packages from Extras (`mc`, `git`, `openssh`) carry an epoch `1:` in their versions (`1:4.8.14` sorts above `4.8.33`), which made apt and the Fast Application Manager
 offer those old packages as "updates" to ours. Our packages of the same names now have the epoch `1:` too, so the real version numbers decide.
@@ -113,5 +105,4 @@ offer those old packages as "updates" to ours. Our packages of the same names no
 ## Known limits
 
 - The repository is not signed yet.
-- Some packages have a plain grey icon in the catalogue (they were packaged without one).
 - Everything is tested on a few phones only. If something breaks for you, please tell me.

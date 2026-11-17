@@ -16,7 +16,8 @@
   "file": "age_1.2.1-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/age/age_1.2.1-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/age.png"
+  "icon": "/assets/packages/icons/age.png",
+  "install": true
  },
  {
   "name": "amfora",
@@ -35,7 +36,8 @@
   "file": "amfora_1.11.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/amfora/amfora_1.11.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/amfora.png"
+  "icon": "/assets/packages/icons/amfora.png",
+  "install": true
  },
  {
   "name": "apt-n900",
@@ -59,30 +61,35 @@
   "other_versions": [
    "0.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/apt-n900.png"
+  "icon": "/assets/packages/icons/apt-n900.png",
+  "install": true
  },
  {
   "name": "apt-transport-curl",
   "title": "apt-transport-curl",
-  "version": "0.1-1maemo3",
+  "version": "0.1-1maemo4",
   "section": "user/system",
   "short": "apt over HTTPS with TLS 1.2/1.3 (through curl 8)",
   "description": "Replaces the apt method /usr/lib/apt/methods/https (old libcurl with OpenSSL 0.9.8, TLS 1.0 only) by a script that runs /usr/bin/curl. Repositories on GitHub Pages and other modern HTTPS servers then work with apt and the Application Manager.\nThe original method is kept as https.distrib and restored when the package is removed. Certificates are always verified (CA bundle of the curl package); Acquire::https::Curl-Insecure \"true\" turns it off, Acquire::https::CaInfo selects another bundle.",
   "depends": [
    "curl",
-   "apt-transport-https"
+   "apt-transport-https",
+   "bash3",
+   "coreutils-gnu"
   ],
   "installed_kb": 60,
-  "size": 8062,
+  "size": 8168,
   "maintainer": "elPytel",
   "upstream": "",
-  "file": "apt-transport-curl_0.1-1maemo3_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/apt-transport-curl/apt-transport-curl_0.1-1maemo3_armel.deb",
+  "file": "apt-transport-curl_0.1-1maemo4_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/apt-transport-curl/apt-transport-curl_0.1-1maemo4_armel.deb",
   "other_versions": [
+   "0.1-1maemo3",
    "0.1-1maemo2",
    "0.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/apt-transport-curl.png"
+  "icon": "/assets/packages/icons/apt-transport-curl.png",
+  "install": false
  },
  {
   "name": "bash5",
@@ -102,7 +109,8 @@
   "file": "bash5_5.3-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/bash5/bash5_5.3-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/bash5.png"
+  "icon": "/assets/packages/icons/bash5.png",
+  "install": true
  },
  {
   "name": "bat",
@@ -123,7 +131,8 @@
   "other_versions": [
    "0.26.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/bat.png"
+  "icon": "/assets/packages/icons/bat.png",
+  "install": true
  },
  {
   "name": "bt-kbmouse",
@@ -138,13 +147,14 @@
    "xserver-xorg-input-evdev-mouse"
   ],
   "installed_kb": 164,
-  "size": 34620,
+  "size": 34626,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bt-kbmouse_0.1-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/bt-kbmouse/bt-kbmouse_0.1-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/bt-kbmouse.png"
+  "icon": "/assets/packages/icons/bt-kbmouse.png",
+  "install": true
  },
  {
   "name": "busybox37",
@@ -163,7 +173,8 @@
   "file": "busybox37_1.37.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/busybox37/busybox37_1.37.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/busybox37.png"
+  "icon": "/assets/packages/icons/busybox37.png",
+  "install": true
  },
  {
   "name": "ca-certs-n900",
@@ -182,7 +193,8 @@
   "file": "ca-certs-n900_1.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ca-certs-n900/ca-certs-n900_1.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/ca-certs-n900.png"
+  "icon": "/assets/packages/icons/ca-certs-n900.png",
+  "install": true
  },
  {
   "name": "camel-lite-ssl3",
@@ -204,7 +216,8 @@
   "file": "camel-lite-ssl3_1.1.92cssu7-2maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/camel-lite-ssl3/camel-lite-ssl3_1.1.92cssu7-2maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/camel-lite-ssl3.png"
+  "icon": "/assets/packages/icons/camel-lite-ssl3.png",
+  "install": true
  },
  {
   "name": "cbonsai",
@@ -225,7 +238,8 @@
   "other_versions": [
    "1.4.2-1maemo1"
   ],
-  "icon": "/assets/packages/icons/cbonsai.png"
+  "icon": "/assets/packages/icons/cbonsai.png",
+  "install": true
  },
  {
   "name": "cmatrix",
@@ -247,7 +261,8 @@
   "other_versions": [
    "2.0-1maemo1"
   ],
-  "icon": "/assets/packages/icons/cmatrix.png"
+  "icon": "/assets/packages/icons/cmatrix.png",
+  "install": true
  },
  {
   "name": "curl",
@@ -266,7 +281,8 @@
   "file": "curl_8.23.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/curl/curl_8.23.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/curl.png"
+  "icon": "/assets/packages/icons/curl.png",
+  "install": false
  },
  {
   "name": "dialog",
@@ -285,7 +301,8 @@
   "file": "dialog_1.3-20260721-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/dialog/dialog_1.3-20260721-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/dialog.png"
+  "icon": "/assets/packages/icons/dialog.png",
+  "install": true
  },
  {
   "name": "fd",
@@ -304,7 +321,8 @@
   "file": "fd_10.5.2-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/fd/fd_10.5.2-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/fd.png"
+  "icon": "/assets/packages/icons/fd.png",
+  "install": true
  },
  {
   "name": "file",
@@ -323,7 +341,8 @@
   "file": "file_5.48-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/file/file_5.48-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/file.png"
+  "icon": "/assets/packages/icons/file.png",
+  "install": true
  },
  {
   "name": "fzf",
@@ -342,7 +361,8 @@
   "file": "fzf_0.75.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/fzf/fzf_0.75.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/fzf.png"
+  "icon": "/assets/packages/icons/fzf.png",
+  "install": true
  },
  {
   "name": "git",
@@ -364,7 +384,8 @@
   "other_versions": [
    "2.56.0-1maemo1"
   ],
-  "icon": "/assets/packages/icons/git.png"
+  "icon": "/assets/packages/icons/git.png",
+  "install": true
  },
  {
   "name": "gpodder",
@@ -397,7 +418,8 @@
    "2.20.3-2maemo3",
    "2.20.3-1maemo1"
   ],
-  "icon": "/assets/packages/icons/gpodder.png"
+  "icon": "/assets/packages/icons/gpodder.png",
+  "install": true
  },
  {
   "name": "gurk",
@@ -416,7 +438,8 @@
   "file": "gurk_0.10.2-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gurk/gurk_0.10.2-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/gurk.png"
+  "icon": "/assets/packages/icons/gurk.png",
+  "install": true
  },
  {
   "name": "htop3",
@@ -437,7 +460,8 @@
   "other_versions": [
    "3.5.3-1maemo1"
   ],
-  "icon": "/assets/packages/icons/htop3.png"
+  "icon": "/assets/packages/icons/htop3.png",
+  "install": true
  },
  {
   "name": "ical-sync",
@@ -453,7 +477,7 @@
    "curl"
   ],
   "installed_kb": 152,
-  "size": 30672,
+  "size": 33500,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "ical-sync_0.1-1maemo2_armel.deb",
@@ -461,7 +485,8 @@
   "other_versions": [
    "0.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/ical-sync.png"
+  "icon": "/assets/packages/icons/ical-sync.png",
+  "install": true
  },
  {
   "name": "irssi",
@@ -481,7 +506,8 @@
   "file": "irssi_1.4.5-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/irssi/irssi_1.4.5-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/irssi.png"
+  "icon": "/assets/packages/icons/irssi.png",
+  "install": true
  },
  {
   "name": "jq",
@@ -500,7 +526,8 @@
   "file": "jq_1.8.2-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/jq/jq_1.8.2-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/jq.png"
+  "icon": "/assets/packages/icons/jq.png",
+  "install": true
  },
  {
   "name": "libsignal-purple",
@@ -522,7 +549,8 @@
   "file": "libsignal-purple_0.1-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/libsignal-purple/libsignal-purple_0.1-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/libsignal-purple.png"
+  "icon": "/assets/packages/icons/libsignal-purple.png",
+  "install": true
  },
  {
   "name": "links",
@@ -542,7 +570,8 @@
   "file": "links_2.30-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/links/links_2.30-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/links.png"
+  "icon": "/assets/packages/icons/links.png",
+  "install": true
  },
  {
   "name": "mc",
@@ -563,7 +592,8 @@
   "other_versions": [
    "4.8.33-1maemo1"
   ],
-  "icon": "/assets/packages/icons/mc.png"
+  "icon": "/assets/packages/icons/mc.png",
+  "install": true
  },
  {
   "name": "micro",
@@ -582,7 +612,8 @@
   "file": "micro_2.0.15-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/micro/micro_2.0.15-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/micro.png"
+  "icon": "/assets/packages/icons/micro.png",
+  "install": true
  },
  {
   "name": "microb-nss",
@@ -602,7 +633,8 @@
   "file": "microb-nss_3.28.6-1maemo2_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/microb-nss/microb-nss_3.28.6-1maemo2_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/microb-nss.png"
+  "icon": "/assets/packages/icons/microb-nss.png",
+  "install": true
  },
  {
   "name": "msmtp",
@@ -622,7 +654,8 @@
   "file": "msmtp_1.8.34-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/msmtp/msmtp_1.8.34-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/msmtp.png"
+  "icon": "/assets/packages/icons/msmtp.png",
+  "install": true
  },
  {
   "name": "mutt",
@@ -645,7 +678,8 @@
   "other_versions": [
    "2.4.3-1maemo1"
   ],
-  "icon": "/assets/packages/icons/mutt.png"
+  "icon": "/assets/packages/icons/mutt.png",
+  "install": true
  },
  {
   "name": "mutt-hildon",
@@ -674,7 +708,8 @@
    "0.2-1maemo1",
    "0.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/mutt-hildon.png"
+  "icon": "/assets/packages/icons/mutt-hildon.png",
+  "install": true
  },
  {
   "name": "nano",
@@ -693,7 +728,8 @@
   "file": "nano_9.3-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/nano/nano_9.3-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/nano.png"
+  "icon": "/assets/packages/icons/nano.png",
+  "install": true
  },
  {
   "name": "ncdu",
@@ -713,7 +749,8 @@
   "file": "ncdu_1.22-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ncdu/ncdu_1.22-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/ncdu.png"
+  "icon": "/assets/packages/icons/ncdu.png",
+  "install": true
  },
  {
   "name": "ntp-sync",
@@ -732,7 +769,8 @@
   "file": "ntp-sync_0.2-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ntp-sync/ntp-sync_0.2-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/ntp-sync.png"
+  "icon": "/assets/packages/icons/ntp-sync.png",
+  "install": true
  },
  {
   "name": "openssh",
@@ -753,7 +791,8 @@
   "other_versions": [
    "10.6p2-1maemo1"
   ],
-  "icon": "/assets/packages/icons/openssh.png"
+  "icon": "/assets/packages/icons/openssh.png",
+  "install": true
  },
  {
   "name": "profanity",
@@ -773,7 +812,8 @@
   "file": "profanity_0.19.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/profanity/profanity_0.19.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/profanity.png"
+  "icon": "/assets/packages/icons/profanity.png",
+  "install": true
  },
  {
   "name": "purple-echo",
@@ -794,7 +834,8 @@
   "file": "purple-echo_0.1-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/purple-echo/purple-echo_0.1-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/purple-echo.png"
+  "icon": "/assets/packages/icons/purple-echo.png",
+  "install": true
  },
  {
   "name": "python3-hildonlite",
@@ -807,7 +848,7 @@
    "python3.11"
   ],
   "installed_kb": 92,
-  "size": 14400,
+  "size": 14398,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "python3-hildonlite_0.4.0-1maemo1_armel.deb",
@@ -816,7 +857,8 @@
    "0.3.0-1maemo1",
    "0.1.0-1maemo1"
   ],
-  "icon": "/assets/packages/icons/python3-hildonlite.png"
+  "icon": "/assets/packages/icons/python3-hildonlite.png",
+  "install": true
  },
  {
   "name": "python3.11",
@@ -836,7 +878,8 @@
   "file": "python3.11_3.11.18-2maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/python3.11/python3.11_3.11.18-2maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/python3.11.png"
+  "icon": "/assets/packages/icons/python3.11.png",
+  "install": true
  },
  {
   "name": "quickjs",
@@ -855,7 +898,8 @@
   "file": "quickjs_2026.06.04-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/quickjs/quickjs_2026.06.04-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/quickjs.png"
+  "icon": "/assets/packages/icons/quickjs.png",
+  "install": true
  },
  {
   "name": "ranger",
@@ -877,7 +921,8 @@
    "1.9.4-1maemo2",
    "1.9.4-1maemo1"
   ],
-  "icon": "/assets/packages/icons/ranger.png"
+  "icon": "/assets/packages/icons/ranger.png",
+  "install": true
  },
  {
   "name": "ripgrep",
@@ -896,7 +941,8 @@
   "file": "ripgrep_15.2.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ripgrep/ripgrep_15.2.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/ripgrep.png"
+  "icon": "/assets/packages/icons/ripgrep.png",
+  "install": true
  },
  {
   "name": "rsync",
@@ -915,7 +961,8 @@
   "file": "rsync_3.5.2-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/rsync/rsync_3.5.2-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/rsync.png"
+  "icon": "/assets/packages/icons/rsync.png",
+  "install": true
  },
  {
   "name": "screen",
@@ -935,7 +982,8 @@
   "file": "screen_5.0.2-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/screen/screen_5.0.2-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/screen.png"
+  "icon": "/assets/packages/icons/screen.png",
+  "install": true
  },
  {
   "name": "selfie",
@@ -957,7 +1005,8 @@
   "file": "selfie_0.6-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/selfie/selfie_0.6-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/selfie.png"
+  "icon": "/assets/packages/icons/selfie.png",
+  "install": true
  },
  {
   "name": "sfeed",
@@ -982,7 +1031,8 @@
    "2.4-1maemo2",
    "2.4-1maemo1"
   ],
-  "icon": "/assets/packages/icons/sfeed.png"
+  "icon": "/assets/packages/icons/sfeed.png",
+  "install": true
  },
  {
   "name": "sfeed-hildon",
@@ -998,7 +1048,7 @@
    "curl"
   ],
   "installed_kb": 124,
-  "size": 29824,
+  "size": 29822,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "sfeed-hildon_0.1-1maemo4_armel.deb",
@@ -1006,7 +1056,8 @@
   "other_versions": [
    "0.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/sfeed-hildon.png"
+  "icon": "/assets/packages/icons/sfeed-hildon.png",
+  "install": true
  },
  {
   "name": "signal-bridge",
@@ -1025,7 +1076,8 @@
   "file": "signal-bridge_0.1.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/signal-bridge/signal-bridge_0.1.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/signal-bridge.png"
+  "icon": "/assets/packages/icons/signal-bridge.png",
+  "install": true
  },
  {
   "name": "smb",
@@ -1046,7 +1098,8 @@
   "other_versions": [
    "0.1-1maemo1"
   ],
-  "icon": "/assets/packages/icons/smb.png"
+  "icon": "/assets/packages/icons/smb.png",
+  "install": true
  },
  {
   "name": "strace",
@@ -1065,7 +1118,8 @@
   "file": "strace_6.19-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/strace/strace_6.19-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/strace.png"
+  "icon": "/assets/packages/icons/strace.png",
+  "install": true
  },
  {
   "name": "terminfo-256color",
@@ -1086,7 +1140,8 @@
   "other_versions": [
    "1.0-1maemo1"
   ],
-  "icon": "/assets/packages/icons/terminfo-256color.png"
+  "icon": "/assets/packages/icons/terminfo-256color.png",
+  "install": true
  },
  {
   "name": "tig",
@@ -1106,7 +1161,8 @@
   "file": "tig_2.6.1-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/tig/tig_2.6.1-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/tig.png"
+  "icon": "/assets/packages/icons/tig.png",
+  "install": true
  },
  {
   "name": "tmux",
@@ -1126,7 +1182,8 @@
   "file": "tmux_3.8-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/tmux/tmux_3.8-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/tmux.png"
+  "icon": "/assets/packages/icons/tmux.png",
+  "install": true
  },
  {
   "name": "tty-clock",
@@ -1148,7 +1205,8 @@
   "other_versions": [
    "2.3-1maemo1"
   ],
-  "icon": "/assets/packages/icons/tty-clock.png"
+  "icon": "/assets/packages/icons/tty-clock.png",
+  "install": true
  },
  {
   "name": "vim9",
@@ -1168,7 +1226,8 @@
   "file": "vim9_9.2.1302-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/vim9/vim9_9.2.1302-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/vim9.png"
+  "icon": "/assets/packages/icons/vim9.png",
+  "install": true
  },
  {
   "name": "weechat",
@@ -1188,7 +1247,8 @@
   "file": "weechat_4.10.4-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/weechat/weechat_4.10.4-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/weechat.png"
+  "icon": "/assets/packages/icons/weechat.png",
+  "install": true
  },
  {
   "name": "wget",
@@ -1208,7 +1268,8 @@
   "file": "wget_1.25.0-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/wget/wget_1.25.0-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/wget.png"
+  "icon": "/assets/packages/icons/wget.png",
+  "install": true
  },
  {
   "name": "whiptail",
@@ -1227,7 +1288,8 @@
   "file": "whiptail_0.52.25-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/whiptail/whiptail_0.52.25-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/whiptail.png"
+  "icon": "/assets/packages/icons/whiptail.png",
+  "install": true
  },
  {
   "name": "wireguard-go",
@@ -1246,7 +1308,8 @@
   "file": "wireguard-go_0.0.20250522-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/wireguard-go/wireguard-go_0.0.20250522-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/wireguard-go.png"
+  "icon": "/assets/packages/icons/wireguard-go.png",
+  "install": true
  },
  {
   "name": "wordgrinder",
@@ -1268,7 +1331,8 @@
   "other_versions": [
    "0.8-1maemo1"
   ],
-  "icon": "/assets/packages/icons/wordgrinder.png"
+  "icon": "/assets/packages/icons/wordgrinder.png",
+  "install": true
  },
  {
   "name": "xml-tools",
@@ -1287,6 +1351,7 @@
   "file": "xml-tools_2.15.4-1maemo1_armel.deb",
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/xml-tools/xml-tools_2.15.4-1maemo1_armel.deb",
   "other_versions": [],
-  "icon": "/assets/packages/icons/xml-tools.png"
+  "icon": "/assets/packages/icons/xml-tools.png",
+  "install": true
  }
 ]

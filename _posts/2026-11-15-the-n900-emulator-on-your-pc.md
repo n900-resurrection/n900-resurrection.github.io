@@ -46,7 +46,7 @@ On my machine `make toolchain` takes several minutes (it installs packages with 
 (it removes the container, the sysroot and the downloads, and asks first).
 
 ## The desktop
-Your own application goes in `apps/<name>/` with a small `hildon-run.sh` (the next post builds one: [Your first N900 GUI app in Python 3]({{ site.baseurl }}{% post_url 2026-11-15-your-first-n900-gui-app-in-python-3 %})).
+Your own application goes in `apps/<name>/` with a small `hildon-run.sh` (the next post builds one: [Your first N900 GUI app in Python 3]({{ site.baseurl }}{% post_url 2026-11-16-your-first-n900-gui-app-in-python-3 %})).
 `make hildon-run APP=<name>` starts it in the desktop; `make emulator` shows the empty desktop with a launcher and a VNC server (port 5999 of the container), so you can tap it with a mouse in any VNC viewer.
 
 ![An application in the emulated desktop]({{ '/assets/img/emulator-standin-list.png' | relative_url }})

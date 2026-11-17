@@ -12,10 +12,18 @@ plugins:
   - jekyll-feed
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
-footer: "N900 Resurrection, a hobby project; software is under the licences of its upstream authors"
+collections:
+  guide:
+    output: true
+defaults:
+  - scope: {path: "", type: guide}
+    values: {layout: guide}
+footer: "N900 Resurrection, a hobby project, software is under the licences of its upstream authors"
 nav:
   - title: Home
     url: /
+  - title: Guide
+    url: /guide/
   - title: Blog
     url: /blog/
   - title: Packages

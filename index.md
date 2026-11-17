@@ -4,7 +4,7 @@ title: Nokia N900, again
 ---
 <p class="lead">The N900 is a 2009 phone with a real keyboard and a Linux inside. This project makes it useful in 2026: modern TLS, current tools, a package repository you can use from the phone itself, all built with <strong>Claude</strong> and tested on real devices.</p>
 
-<p><a class="button" href="{{ '/packages/' | relative_url }}">Browse the packages</a> &nbsp; <a href="{{ '/blog/' | relative_url }}">Read the blog</a></p>
+<p><a class="button" href="{{ '/packages/' | relative_url }}">Browse the packages</a> &nbsp; <a href="{{ '/guide/' | relative_url }}">Read the guide</a> &nbsp; <a href="{{ '/blog/' | relative_url }}">Read the blog</a></p>
 
 <h2 id="use">Use the repository</h2>
 The apt of the phone speaks TLS 1.0 only, so two packages are installed by hand first: <code>curl</code> and <code>apt-transport-curl</code>
