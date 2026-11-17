@@ -1237,6 +1237,28 @@
   "install": true
  },
  {
+  "name": "tiny",
+  "title": "TINY",
+  "version": "2.1-1maemo2",
+  "section": "user/games",
+  "short": "A quiz robot: a tiny neural network with a robot voice",
+  "description": "TINY 2.1 is a question answering neural network with 367,000 weights that reads and writes letter by letter and knows about 3,500 facts (countries, elements, animals, sums, words in other languages). Outside them it makes answers up. It has a full-screen terminal interface with a live neural monitor and a robot voice. Port of the DOS program to the N900: the screen follows the size of the terminal.\nKeys: PgUp / PgDn volume, Ctrl-A help, Ctrl-S sound, Ctrl-V voice, Ctrl-T creativity, Esc quit.\nUpstream: https://github.com/WollyMonjac/Tiny-2.1 (port: https://github.com/n900-resurrection/Tiny-2.1)",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "pulseaudio-utils",
+   "terminfo-256color"
+  ],
+  "installed_kb": 688,
+  "size": 471732,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/WollyMonjac/Tiny-2.1",
+  "file": "tiny_2.1-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/tiny/tiny_2.1-1maemo2_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/tiny.png",
+  "install": true
+ },
+ {
   "name": "tmux",
   "title": "tmux",
   "version": "3.8-1maemo1",
