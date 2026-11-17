@@ -29,9 +29,13 @@ A phone that does not start, or that you want to reset to the last official Noki
 
 ## Documents and help
 
-- The **notes** this guide grew from: [nokia-n900-notes](https://github.com/elPytel/nokia-n900-notes) (an archive).
+- **User guides (PDF):**
+  - [Nokia N900 Demo guide](https://github.com/n900-resurrection/nokia-n900-notes/raw/main/doc/Nokia%20Demo%20guide.pdf) (24 pages, 1.6 MB): Nokia's own tour of the phone and of Maemo 5.
+  - [Nokia N900 Commented Hardware specs](https://github.com/n900-resurrection/nokia-n900-notes/raw/main/doc/Nokia%20N900%20Commented%20Hardware%20specs.pdf) (28 pages, 10 MB): every component of the N900 and how the Linux kernel and the Maemo 5 binaries support it (a page of the Maemo community wiki saved in 2015).
+
+- The **notes** this guide grew from: [nokia-n900-notes](https://github.com/n900-resurrection/nokia-n900-notes) (an archive).
 - **r/N900** on Reddit: an active community, where this project started.
 - **Maemo Leste**: a modern Debian-based Linux with the Hildon desktop, also for the N900 and a few other phones. It is a different system from Maemo 5, packages here do not run on it.
-- **[talk.maemo.org](https://talk.maemo.org/)**: the old Maemo forum, still online when I checked, with years of how-tos and bug threads. A copy in the Internet Archive: [web.archive.org/web/2026/https://talk.maemo.org/](https://web.archive.org/web/2026/https://talk.maemo.org/) (the Wayback Machine also has the old `repository.maemo.org`, see the [notes](https://github.com/elPytel/nokia-n900-notes)).
+- **[talk.maemo.org](https://talk.maemo.org/)**: the old Maemo forum, still online when I checked, with years of how-tos and bug threads. A copy in the Internet Archive: [web.archive.org/web/2026/https://talk.maemo.org/](https://web.archive.org/web/2026/https://talk.maemo.org/) (the Wayback Machine also has the old `repository.maemo.org`, see the [notes](https://github.com/n900-resurrection/nokia-n900-notes)).
 
 If a link on this page is dead when you read it, please [open an issue](https://github.com/n900-resurrection/n900-resurrection.github.io/issues).

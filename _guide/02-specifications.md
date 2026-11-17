@@ -30,6 +30,10 @@ Figures of the original Nokia specification (model RX-51). They matter when you 
 {: .warning}
 > The figures come from the published Nokia data sheets. The memory and storage sizes I checked on a real phone. If you find a mistake, [open an issue](https://github.com/n900-resurrection/n900-resurrection.github.io/issues).
 
+The component-by-component details (and how the kernel supports each part) are in the
+[Commented Hardware specs](https://github.com/n900-resurrection/nokia-n900-notes/raw/main/doc/Nokia%20N900%20Commented%20Hardware%20specs.pdf) (PDF, 28 pages). Nokia's own
+[Demo guide](https://github.com/n900-resurrection/nokia-n900-notes/raw/main/doc/Nokia%20Demo%20guide.pdf) is a good first look at what the phone does.
+
 ## What this means in practice
 
 - **256 MB of RAM and one slow core:** command-line tools and small GTK 2 programs run well. A modern browser or anything built on Electron does not.
