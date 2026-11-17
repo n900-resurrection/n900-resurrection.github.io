@@ -1,0 +1,9 @@
+[install]
+catalogues = nokia-ovi-mirror
+package = bounce
+
+[nokia-ovi-mirror]
+name = Nokia Ovi apps (mirror linenoise)
+uri = http://maemo.linenoise.info/downloads.maemo.nokia.com/fremantle/ovi/
+dist = ./
+components =
