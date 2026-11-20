@@ -174,7 +174,7 @@
    "xserver-xorg-input-evdev-mouse"
   ],
   "installed_kb": 164,
-  "size": 34624,
+  "size": 34626,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bt-kbmouse_0.1-1maemo1_armel.deb",
@@ -269,6 +269,26 @@
   "install": true
  },
  {
+  "name": "chess-tui",
+  "title": "Chess (chess-tui)",
+  "version": "2.8.1-1maemo1",
+  "section": "user/games",
+  "short": "chess-tui 2.8.1 chess for the terminal",
+  "description": "chess-tui 2.8.1: a chess game for the terminal (a board drawn with characters, skins, a viewer of PGN files). Two players on one phone,\na UCI engine as the opponent (the package stockfish is used when it is installed; else chess-tui -e /path/to/engine) or Lichess online with a token. Built for Maemo 5 with Rust as a static\nbinary, 5 MB; it needs no libraries. The menu entry opens it in the terminal.\nUpstream: https://github.com/thomas-mauran/chess-tui",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 5140,
+  "size": 2419232,
+  "maintainer": "elPytel (build of upstream chess-tui by Thomas Mauran and contributors)",
+  "upstream": "https://github.com/thomas-mauran/chess-tui",
+  "file": "chess-tui_2.8.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/chess-tui/chess-tui_2.8.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/chess-tui.png",
+  "install": true
+ },
+ {
   "name": "cmatrix",
   "title": "CMatrix",
   "version": "2.0-1maemo2",
@@ -289,6 +309,48 @@
    "2.0-1maemo1"
   ],
   "icon": "/assets/packages/icons/cmatrix.png",
+  "install": true
+ },
+ {
+  "name": "cmus",
+  "title": "cmus (music player)",
+  "version": "2.13.0-1maemo1",
+  "section": "user/multimedia",
+  "short": "cmus 2.13.0 music player for the terminal",
+  "description": "cmus 2.13.0: a small and fast music player for the terminal with a library, playlists, a play queue, search and filters, and a\nremote control (cmus-remote). Keys: 1-7 change the views, :add ~/MyDocs/.sounds adds a folder, Enter plays, c pauses, b/v next/stop, z/x\nprevious/play, / searches, :q quits. It plays mp3, aac/m4a, opus, ogg vorbis, flac, alac, ape and wav through one input plugin made with the\nffmpeg of this project, and sounds through PulseAudio, so the volume of the phone is the volume of the player. The menu entry opens it in the\nterminal. Upstream: https://cmus.github.io",
+  "depends": [
+   "libc6",
+   "libpulse0"
+  ],
+  "installed_kb": 5376,
+  "size": 2489034,
+  "maintainer": "elPytel (build of upstream cmus by Timo Hirvonen, Kevin Ko and contributors)",
+  "upstream": "https://cmus.github.io",
+  "file": "cmus_2.13.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/cmus/cmus_2.13.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/cmus.png",
+  "install": true
+ },
+ {
+  "name": "cointop",
+  "title": "cointop (crypto prices)",
+  "version": "1.6.10-1maemo1",
+  "section": "user/utilities",
+  "short": "cointop 1.6.10 cryptocurrency prices in the terminal",
+  "description": "cointop 1.6.10: a table of the cryptocurrencies with their price, change and market capitalisation, charts, favourites and a portfolio\n(holdings), for the terminal. The data come from the free CoinGecko API over HTTPS, which limits the calls per minute (wait and refresh with r).\nBuilt for Maemo 5 with Go as a static binary (11 MB). The upstream repository is archived (2024), the last release still works.\nUpstream: https://github.com/cointop-sh/cointop",
+  "depends": [
+   "libc6",
+   "curl"
+  ],
+  "installed_kb": 11388,
+  "size": 4444104,
+  "maintainer": "elPytel (build of upstream cointop by Miguel Mota and contributors)",
+  "upstream": "https://github.com/cointop-sh/cointop",
+  "file": "cointop_1.6.10-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/cointop/cointop_1.6.10-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/cointop.png",
   "install": true
  },
  {
@@ -353,6 +415,28 @@
    "10.5.2-1maemo1"
   ],
   "icon": "/assets/packages/icons/fd.png",
+  "install": true
+ },
+ {
+  "name": "ffmpeg",
+  "title": "ffmpeg",
+  "version": "9.0.2-1maemo2",
+  "section": "user/multimedia",
+  "short": "ffmpeg: remux and decode MP4/Matroska, H.264 and AAC (NEON)",
+  "description": "ffmpeg 9.0.2 built for Maemo 5 (armel, glibc 2.5, NEON), a minimal static build: MP4, Matroska/WebM, MP3,\nOgg and AAC input; H.264, MPEG-4, VP8, AAC, Opus and MP3 decoding; MP4, NUT and raw output. No network protocols\n(files and pipes only). It is much faster than the old codecs of the phone: 360p H.264 at about 39 frames per second.\nUsed for example to turn the fragmented MP4 files of video sites into plain MP4 (ffmpeg -i video.mp4 -i audio.mp4 -c copy out.mp4).\nUpstream: https://ffmpeg.org/",
+  "depends": [
+   "libc6 (>= 2.5)"
+  ],
+  "installed_kb": 5896,
+  "size": 2807046,
+  "maintainer": "elPytel",
+  "upstream": "https://ffmpeg.org/",
+  "file": "ffmpeg_9.0.2-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ffmpeg/ffmpeg_9.0.2-1maemo2_armel.deb",
+  "other_versions": [
+   "9.0.2-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/ffmpeg.png",
   "install": true
  },
  {
@@ -511,7 +595,7 @@
    "curl"
   ],
   "installed_kb": 152,
-  "size": 33504,
+  "size": 33498,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "ical-sync_0.1-1maemo2_armel.deb",
@@ -563,6 +647,46 @@
    "1.8.2-1maemo1"
   ],
   "icon": "/assets/packages/icons/jq.png",
+  "install": true
+ },
+ {
+  "name": "less",
+  "title": "less",
+  "version": "710-1maemo1",
+  "section": "user/utilities",
+  "short": "GNU less 710 pager",
+  "description": "GNU less 710 for Maemo 5: the pager of the phone is the small one of BusyBox, which has no --version, no marks and no incremental search.\nThis less lives in /opt/less/bin/less and does not replace the system pager; programs that want it (offpunk does) put /opt/less/bin first in PATH,\nand you can do it in your shell: export PATH=/opt/less/bin:$PATH. UTF-8 text, ANSI colours with -R, search with / and ?, q quits.\nUpstream: https://www.greenwoodsoftware.com/less/",
+  "depends": [
+   "libc6 (>= 2.4)"
+  ],
+  "installed_kb": 584,
+  "size": 227796,
+  "maintainer": "elPytel (build of upstream less by Mark Nudelman)",
+  "upstream": "https://www.greenwoodsoftware.com/less/",
+  "file": "less_710-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/less/less_710-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/less.png",
+  "install": true
+ },
+ {
+  "name": "lf",
+  "title": "lf (file manager)",
+  "version": "41-1maemo1",
+  "section": "user/utilities",
+  "short": "lf r41 terminal file manager",
+  "description": "lf r41 (list files): a file manager for the terminal in the style of ranger, written in Go. Three columns (parent, current, preview),\nvi-like keys (h j k l, / search, space select, y d p copy, move and paste, a Enter opens), a preview of text files and your own commands through\nthe configuration file ~/.config/lf/lfrc (an example is in /opt/lf/share/doc/lf/lfrc.example). Built for Maemo 5 as a static binary (about 3 MB).\nUpstream: https://github.com/gokcehan/lf",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 5736,
+  "size": 2246602,
+  "maintainer": "elPytel (build of upstream lf by Gokcehan Kara and contributors)",
+  "upstream": "https://github.com/gokcehan/lf",
+  "file": "lf_41-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/lf/lf_41-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/lf.png",
   "install": true
  },
  {
@@ -625,7 +749,7 @@
    "curl"
   ],
   "installed_kb": 116,
-  "size": 22272,
+  "size": 22278,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "llama-chat_0.1-1maemo2_armel.deb",
@@ -653,6 +777,32 @@
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/llama2c/llama2c_0.0.20240529-1maemo2_armel.deb",
   "other_versions": [],
   "icon": "/assets/packages/icons/llama2c.png",
+  "install": true
+ },
+ {
+  "name": "maeshare",
+  "title": "maeshare",
+  "version": "1.0.1",
+  "section": "user/network",
+  "short": "MaeShare for Nokia N900",
+  "description": "LocalSend compatible LAN file transfer for Maemo 5 (Fremantle).\nPeer to peer over HTTPS inside the local network, no server involved.",
+  "depends": [
+   "libqt4-declarative (>= 4.7.0)",
+   "libqt4-gui (>= 4.7.0)",
+   "libqt4-network (>= 4.7.0)",
+   "libqt4-core (>= 4.7.0)",
+   "libqt4-svg (>= 4.7.0)"
+  ],
+  "installed_kb": 2376,
+  "size": 655988,
+  "maintainer": "Chih",
+  "upstream": "",
+  "file": "maeshare_1.0.1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/maeshare/maeshare_1.0.1_armel.deb",
+  "other_versions": [
+   "1.0.0"
+  ],
+  "icon": "/assets/packages/icons/maeshare.png",
   "install": true
  },
  {
@@ -695,6 +845,26 @@
    "4.8.33-1maemo1"
   ],
   "icon": "/assets/packages/icons/mc.png",
+  "install": true
+ },
+ {
+  "name": "mdcat",
+  "title": "mdcat",
+  "version": "2.20.2-1maemo1",
+  "section": "user/utilities",
+  "short": "mdcat 2.20.2 shows Markdown files in the terminal",
+  "description": "mdcat 2.20.2: like cat, but for Markdown. It renders headings, lists, quotes, tables, links and highlighted code blocks with the colours and\nstyles of the terminal. mdcat README.md shows a file, mdless README.md pages it (needs a pager: the package less is the better one), and\nmdcat --help lists the options. Images need a terminal that can show them (the terminal of the phone cannot). Built for Maemo 5 with Rust as a\nstatic binary (20 MB, most of it the syntax definitions for code blocks). The upstream repository is archived (2026), the last release still works.\nUpstream: https://github.com/swsnr/mdcat",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 20324,
+  "size": 10116406,
+  "maintainer": "elPytel (build of upstream mdcat by Sebastian Wiesner and contributors)",
+  "upstream": "https://github.com/swsnr/mdcat",
+  "file": "mdcat_2.20.2-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/mdcat/mdcat_2.20.2-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/mdcat.png",
   "install": true
  },
  {
@@ -860,6 +1030,54 @@
   "install": true
  },
  {
+  "name": "notpipe-hildon",
+  "title": "NotPipe (YouTube client)",
+  "version": "0.1-1maemo5",
+  "section": "user/multimedia",
+  "short": "A YouTube client with a touch interface (Invidious + nplay)",
+  "description": "Search for videos, tap one and watch it: the application asks a public Invidious instance (not YouTube itself) for the list of\nstreams, downloads the picture (H.264) and the sound (AAC), which YouTube keeps in two files, and plays them with nplay, the player of this\nproject that does 240p smoothly and 360p mostly. 'Save to MyDocs' joins the two files into one MP4 without re-encoding. The settings are the quality,\nthe sound (normal or small) and the size of the cache; the list of Invidious instances is updated from api.invidious.io once a day and a call tries\ninstance after instance, skipping those that ask for a browser check. The idea comes from notPipe for old Android phones. Upstream: this project (MIT).",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.5.0)",
+   "curl",
+   "nplay",
+   "ffmpeg"
+  ],
+  "installed_kb": 140,
+  "size": 25966,
+  "maintainer": "elPytel",
+  "upstream": "this",
+  "file": "notpipe-hildon_0.1-1maemo5_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/notpipe-hildon/notpipe-hildon_0.1-1maemo5_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/notpipe-hildon.png",
+  "install": true
+ },
+ {
+  "name": "nplay",
+  "title": "nplay",
+  "version": "0.1-1maemo3",
+  "section": "user/multimedia",
+  "short": "Video player with ffmpeg: 360p H.264 and AAC, no conversion",
+  "description": "nplay 0.1, a small video player for the N900 built on the libraries of ffmpeg 9 (with NEON) and SDL. It plays the\nH.264/AAC (MP4, fragmented MP4, Matroska/WebM) files that the old Media Player of the phone cannot: 240p smoothly, 360p mostly.\nIt can play the picture and the sound from two separate files (the way video sites deliver them) without joining them, uses the\nhardware overlay of the phone, keeps the picture in step with the sound (dropping frames, then simplifying the decoding when the phone\ncannot keep up) and uses and changes the volume of the phone (Up/Down and a slider), shows its controls with a tap on the picture like the player of the phone (a seek bar with the times, play/pause, 10 s back/forward) and Backspace quits.\nUsage: nplay [-n] [-N] [-s SECONDS] [-f] [-v] VIDEO [AUDIO]. Esc quits, space pauses.",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libsdl1.2"
+  ],
+  "installed_kb": 5376,
+  "size": 2527950,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "nplay_0.1-1maemo3_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/nplay/nplay_0.1-1maemo3_armel.deb",
+  "other_versions": [
+   "0.1-1maemo2",
+   "0.1-1maemo1"
+  ],
+  "icon": "/assets/packages/icons/nplay.png",
+  "install": true
+ },
+ {
   "name": "ntp-sync",
   "title": "ntp-sync",
   "version": "0.2-1maemo1",
@@ -877,6 +1095,29 @@
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/ntp-sync/ntp-sync_0.2-1maemo1_armel.deb",
   "other_versions": [],
   "icon": "/assets/packages/icons/ntp-sync.png",
+  "install": true
+ },
+ {
+  "name": "offpunk",
+  "title": "Offpunk",
+  "version": "3.1-1maemo1",
+  "section": "user/network",
+  "short": "offpunk 3.1 offline-first reader of Gemini, Gopher, web and RSS",
+  "description": "offpunk 3.1: a reader for the terminal that keeps everything it has shown in a cache, so it works without the network. Type a\nURL (gemini://, gopher://, https://) or a number of a link; \"offline\" works with the cache only, \"sync\" fetches the pages of your lists and\nbookmarks while you have a connection, and \"help\" lists the commands. It reads feeds, too. It runs on the Python 3.11 of the package python3.11 and\nhas no C parts: web pages are simplified with BeautifulSoup (no lxml). The commands offpunk, ansicat (shows a file or a page in the terminal),\nnetcache and openk are installed. Upstream: https://offpunk.net",
+  "depends": [
+   "python3.11",
+   "curl",
+   "file",
+   "less"
+  ],
+  "installed_kb": 8704,
+  "size": 2810520,
+  "maintainer": "elPytel (packaging of upstream offpunk by Ploum and contributors)",
+  "upstream": "https://offpunk.net",
+  "file": "offpunk_3.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/offpunk/offpunk_3.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/offpunk.png",
   "install": true
  },
  {
@@ -947,20 +1188,21 @@
  {
   "name": "python3-hildonlite",
   "title": "hildonlite (Python 3)",
-  "version": "0.4.0-1maemo1",
+  "version": "0.5.0-1maemo1",
   "section": "user/development",
   "short": "Hildon and GTK 2 windows from Python 3 (ctypes layer)",
   "description": "Python module hildonlite: Window, Box, Label, Button, Entry (with completion), TextView, PannableArea, AppMenu, lists, dialogs and timers over GTK 2 and Hildon,\ncalled through ctypes, because PyGTK exists only for Python 2 and PyGObject has no GTK 2 / Hildon typelibs.\nUse: import hildonlite as hl. Examples: /opt/python3/share/doc/python3-hildonlite/examples. The same source installs with pip (pip install git+https://github.com/n900-resurrection/hildonlite).",
   "depends": [
    "python3.11"
   ],
-  "installed_kb": 92,
-  "size": 14402,
+  "installed_kb": 96,
+  "size": 15196,
   "maintainer": "elPytel",
   "upstream": "",
-  "file": "python3-hildonlite_0.4.0-1maemo1_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/python3-hildonlite/python3-hildonlite_0.4.0-1maemo1_armel.deb",
+  "file": "python3-hildonlite_0.5.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/python3-hildonlite/python3-hildonlite_0.5.0-1maemo1_armel.deb",
   "other_versions": [
+   "0.4.0-1maemo1",
    "0.3.0-1maemo1",
    "0.1.0-1maemo1"
   ],
@@ -1113,7 +1355,7 @@
    "libomap3cam"
   ],
   "installed_kb": 104,
-  "size": 19502,
+  "size": 19500,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "selfie_0.6-1maemo1_armel.deb",
@@ -1213,6 +1455,26 @@
    "0.1-1maemo1"
   ],
   "icon": "/assets/packages/icons/smb.png",
+  "install": true
+ },
+ {
+  "name": "stockfish",
+  "title": "Stockfish",
+  "version": "11-1maemo1",
+  "section": "user/games",
+  "short": "Stockfish 11 chess engine (UCI)",
+  "description": "Stockfish 11, a strong open source chess engine with the classical evaluation (no neural network file). It speaks UCI on stdin\nand stdout, so a chess program uses it as the opponent; chess-tui does it with -e /usr/bin/stockfish. About 30 000 nodes per second on the N900:\ndepth 12 in 3 seconds. Built for Maemo 5 as a static binary, 1.1 MB.\nUpstream: https://github.com/official-stockfish/Stockfish",
+  "depends": [
+   "libc6"
+  ],
+  "installed_kb": 1232,
+  "size": 515058,
+  "maintainer": "elPytel (build of upstream Stockfish by the Stockfish developers)",
+  "upstream": "https://github.com/official-stockfish/Stockfish",
+  "file": "stockfish_11-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/stockfish/stockfish_11-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/stockfish.png",
   "install": true
  },
  {
