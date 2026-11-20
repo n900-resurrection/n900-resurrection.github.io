@@ -174,7 +174,7 @@
    "xserver-xorg-input-evdev-mouse"
   ],
   "installed_kb": 164,
-  "size": 34622,
+  "size": 34624,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bt-kbmouse_0.1-1maemo1_armel.deb",
@@ -612,6 +612,50 @@
   "install": true
  },
  {
+  "name": "llama-chat",
+  "title": "Story teller (chat window)",
+  "version": "0.1-1maemo2",
+  "section": "user/games",
+  "short": "A chat window for tiny story-telling language models (llama2.c)",
+  "description": "A touch application on top of llama2c. You write the first words or a turn of a story, the model continues it token by token (about three tokens\nper second on the N900, roughly the speed of reading). The menu of the title bar opens the settings: the model, the temperature, the length of a turn, top-p\nand how much of the story the model remembers. The list of models shows the ones that can be downloaded (stories15M, 61 MB; TinyStories 25M, 98 MB,\nwhich is converted on the phone from the Hugging Face checkpoint); the downloads are checked by SHA-256, and your own models can be added in\n~/.llama-chat/models.json. Only models that fit in the RAM of the phone are offered. Upstream: this project (MIT); the engine is llama2.c by Andrej Karpathy (MIT).",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.4.0)",
+   "llama2c (>= 0.0.20240529-1maemo2)",
+   "curl"
+  ],
+  "installed_kb": 116,
+  "size": 22272,
+  "maintainer": "elPytel",
+  "upstream": "this",
+  "file": "llama-chat_0.1-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/llama-chat/llama-chat_0.1-1maemo2_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/llama-chat.png",
+  "install": true
+ },
+ {
+  "name": "llama2c",
+  "title": "Story teller (llama2.c)",
+  "version": "0.0.20240529-1maemo2",
+  "section": "user/games",
+  "short": "A tiny language model that tells stories (llama2.c)",
+  "description": "llama2.c is Karpathy's inference engine for the Llama 2 architecture, one C file without dependencies. With the small TinyStories models it continues a few first words into a children's story: stories15M (15 million weights) runs at about 3 tokens per second on the N900.\nllama-story asks for the first words of the story. The model of 61 MB is downloaded once to ~/llama2c on request; the tiny stories260K (1 MB) is in the package. llama2c is the engine itself (llama2c model.bin -i \"Once upon a time\"), llama2c-q8 reads int8 quantized models.\nA model has to fit in RAM: bigger ones (stories42M, 167 MB) read the flash for every token and take half a minute per token.\nUpstream: https://github.com/karpathy/llama2.c",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "curl"
+  ],
+  "installed_kb": 1688,
+  "size": 1254744,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/karpathy/llama2.c",
+  "file": "llama2c_0.0.20240529-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/llama2c/llama2c_0.0.20240529-1maemo2_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/llama2c.png",
+  "install": true
+ },
+ {
   "name": "mandoc",
   "title": "mandoc",
   "version": "1.14.6-1maemo2",
@@ -911,7 +955,7 @@
    "python3.11"
   ],
   "installed_kb": 92,
-  "size": 14396,
+  "size": 14402,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "python3-hildonlite_0.4.0-1maemo1_armel.deb",
@@ -1069,7 +1113,7 @@
    "libomap3cam"
   ],
   "installed_kb": 104,
-  "size": 19500,
+  "size": 19502,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "selfie_0.6-1maemo1_armel.deb",

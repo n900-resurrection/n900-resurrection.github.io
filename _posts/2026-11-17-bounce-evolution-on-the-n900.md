@@ -64,4 +64,3 @@ The Application Manager can also fetch it from the Nokia catalogue mirror: [boun
 - [Redbound](https://github.com/alox-dev/redbound) is a source port of Bounce Evolution that runs natively on modern devices, with the original levels, physics and sound. It needs **your own copy of the original package** and does not include any game data, which makes the checksum above useful.
 - [reBounce](https://github.com/myname24/rebounce-vita) is a port to the PlayStation Vita, with the same requirement.
 
-If you play it, I would be glad to hear how it runs on your phone, and whether the tilt control is still comfortable.

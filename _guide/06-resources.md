@@ -37,7 +37,7 @@ A phone that does not start, or that you want to reset to the last official Noki
   [Scribd](https://www.scribd.com/doc/246840487/Nokia-N900-RX-51-Schematics#page=1) (a download needs an account),
   [ManualsLib](https://www.manualslib.com/manual/867693/Nokia-N900.html),
   [ManualMachine](https://manualmachine.com/nokia/n900/4545339-service-manual). A free, unofficial and unfinished redrawing from the Neo900 project:
-  [n900-wip-2014061922.pdf](https://neo900.org/stuff/werner/tmp/n900-wip-2014061922.pdf). An example of what you can do with them: [the backup battery of the clock]({{ site.baseurl }}{% post_url 2026-11-17-the-n900-clock-that-forgets-the-time %}).
+  [n900-wip-2014061922.pdf](https://neo900.org/stuff/werner/tmp/n900-wip-2014061922.pdf). An example of what you can do with them: [the backup battery of the clock]({{ site.baseurl }}{% post_url 2026-11-20-the-n900-clock-that-forgets-the-time %}).
 - The **notes** this guide grew from: [nokia-n900-notes](https://github.com/n900-resurrection/nokia-n900-notes) (an archive).
 - **r/N900** on Reddit: an active community, where this project started.
 - **Maemo Leste**: a modern Debian-based Linux with the Hildon desktop, also for the N900 and a few other phones. It is a different system from Maemo 5, packages here do not run on it.
