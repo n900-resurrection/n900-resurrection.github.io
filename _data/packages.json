@@ -46,7 +46,7 @@
  {
   "name": "apt-n900",
   "title": "apt-n900",
-  "version": "0.2-1maemo2",
+  "version": "0.2-1maemo3",
   "section": "user/system",
   "short": "Friendly apt command (list --upgradable, search, show) over apt-get",
   "description": "Adds /usr/bin/apt with the commands of modern apt: apt update, apt list --upgradable, apt upgrade, apt install, apt search, apt show, apt files, apt owns, and apt tui (apt-tui: a dialog based menu to upgrade, search, install and remove). It only calls apt-get, apt-cache and dpkg-query: nothing of the system package manager is replaced.",
@@ -57,12 +57,13 @@
    "dialog"
   ],
   "installed_kb": 56,
-  "size": 8774,
+  "size": 8954,
   "maintainer": "elPytel",
   "upstream": "",
-  "file": "apt-n900_0.2-1maemo2_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/apt-n900/apt-n900_0.2-1maemo2_armel.deb",
+  "file": "apt-n900_0.2-1maemo3_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/apt-n900/apt-n900_0.2-1maemo3_armel.deb",
   "other_versions": [
+   "0.2-1maemo2",
    "0.2-1maemo1",
    "0.1-1maemo1"
   ],
@@ -351,6 +352,48 @@
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/cointop/cointop_1.6.10-1maemo1_armel.deb",
   "other_versions": [],
   "icon": "/assets/packages/icons/cointop.png",
+  "install": true
+ },
+ {
+  "name": "copyparty",
+  "title": "File server",
+  "version": "1.20.26-1maemo2",
+  "section": "user/network",
+  "short": "Share folders of the phone with a web browser (copyparty)",
+  "description": "copyparty is a file server in Python: any computer, tablet or phone on the same network opens the address of the N900 in its browser and\ndownloads or uploads files (also whole folders, with resuming), no software needed there. The menu entry File server starts it in the terminal\nand shows the address and the password; the folder MyDocs is shared by default, the user is n900 with a random password\n(~/.copyparty/share.conf). Commands: copyparty-share [run|start|stop|status|url|passwd|config], and copyparty with all options of the\nupstream program (copyparty --help). Thumbnails and the file index are off (the phone is too small for them).\nThe server listens on all network connections: use it at home, on a hotspot or over USB networking, and do not expose it to the internet without HTTPS.\nUpstream: github.com/9001/copyparty (MIT, by ed).",
+  "depends": [
+   "python3.11"
+  ],
+  "installed_kb": 3004,
+  "size": 881952,
+  "maintainer": "elPytel",
+  "upstream": "github.com/9001/copyparty",
+  "file": "copyparty_1.20.26-1maemo2_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/copyparty/copyparty_1.20.26-1maemo2_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/copyparty.png",
+  "install": true
+ },
+ {
+  "name": "copyparty-hildon",
+  "title": "File server settings",
+  "version": "0.1-1maemo1",
+  "section": "user/network",
+  "short": "Touch settings and the on/off switch of the copyparty file server",
+  "description": "Settings of the file server of the package copyparty: the shared folders (who may read and write), the users and their passwords, the port,\nand a switch that starts and stops the server and shows the address to type in the browser of your computer. The settings are the file\n~/.copyparty/share.conf, the same one the menu entry File server and the command copyparty-share use; lines that this application does not know\n(flags of a folder, other sections) are kept, and a copy of the previous file is saved as share.conf.bak.\nUpstream: this project (MIT).",
+  "depends": [
+   "python3.11",
+   "python3-hildonlite (>= 0.5.0)",
+   "copyparty (>= 1.20.26-1maemo2)"
+  ],
+  "installed_kb": 108,
+  "size": 20026,
+  "maintainer": "elPytel",
+  "upstream": "this",
+  "file": "copyparty-hildon_0.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/copyparty-hildon/copyparty-hildon_0.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/copyparty-hildon.png",
   "install": true
  },
  {
@@ -1627,6 +1670,27 @@
   "url": "https://n900-resurrection.github.io/n900-repository/pool/main/vim9/vim9_9.2.1302-1maemo1_armel.deb",
   "other_versions": [],
   "icon": "/assets/packages/icons/vim9.png",
+  "install": true
+ },
+ {
+  "name": "vlak",
+  "title": "Vlak",
+  "version": "2.20-1maemo1",
+  "section": "user/games",
+  "short": "Vlak (Train), the Czech classic game of 1993: collect everything, drive out of the gate",
+  "description": "Vlak by Miroslav Nemecek (1993, MS-DOS, 13 kB): drive a train, pick up the things on the board (each becomes a wagon), do not hit a\nwall or your own wagons, and drive out of the golden gate. 50 scenes with passwords, a demo, a solver (Shift).\nVersion 2.20, the C++ source of the PicoPad handheld, with a thin SDL 1.2 layer for the N900 (keyboard arrows or taps on the touch screen).\nFreeware and open source by the author's own words (https://www.breatharian.eu/sw/vlak/index.html).",
+  "depends": [
+   "libc6 (>= 2.5)",
+   "libsdl1.2"
+  ],
+  "installed_kb": 264,
+  "size": 105764,
+  "maintainer": "elPytel",
+  "upstream": "",
+  "file": "vlak_2.20-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/vlak/vlak_2.20-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/vlak.png",
   "install": true
  },
  {
