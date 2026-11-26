@@ -12,7 +12,7 @@
    "libsdl2-mixer (>= 2.8)"
   ],
   "installed_kb": 17288,
-  "size": 3926144,
+  "size": 3925674,
   "maintainer": "elPytel (build of upstream Abuse)",
   "upstream": "https://github.com/Xenoveritas/abuse",
   "file": "abuse_0.9.1-1maemo2_armel.deb",
@@ -32,7 +32,7 @@
    "libc6"
   ],
   "installed_kb": 6280,
-  "size": 2672408,
+  "size": 2672380,
   "maintainer": "elPytel (build of upstream age by Filippo Valsorda and contributors)",
   "upstream": "https://age-encryption.org",
   "file": "age_1.2.1-1maemo2_armel.deb",
@@ -54,7 +54,7 @@
    "libc6"
   ],
   "installed_kb": 16212,
-  "size": 5759244,
+  "size": 5759200,
   "maintainer": "elPytel (build of upstream amfora by makeworld and contributors)",
   "upstream": "https://github.com/makew0rld/amfora",
   "file": "amfora_1.11.0-1maemo2_armel.deb",
@@ -77,7 +77,7 @@
    "libncurses5"
   ],
   "installed_kb": 26688,
-  "size": 23764100,
+  "size": 23763874,
   "maintainer": "elPytel (build of upstream Angband)",
   "upstream": "https://rephial.org/",
   "file": "angband_4.2.6-1maemo2_armel.deb",
@@ -100,7 +100,7 @@
    "dialog"
   ],
   "installed_kb": 60,
-  "size": 10206,
+  "size": 10192,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "apt-n900_0.3-1maemo1_armel.deb",
@@ -128,7 +128,7 @@
    "coreutils-gnu"
   ],
   "installed_kb": 88,
-  "size": 10638,
+  "size": 10614,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "apt-transport-curl_0.1-1maemo5_armel.deb",
@@ -154,7 +154,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 1112,
-  "size": 582444,
+  "size": 582418,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bash5_5.3-1maemo1_armel.deb",
@@ -174,7 +174,7 @@
    "libc6"
   ],
   "installed_kb": 5284,
-  "size": 3014280,
+  "size": 3014240,
   "maintainer": "elPytel (build of upstream bat by David Peter and contributors)",
   "upstream": "https://github.com/sharkdp/bat",
   "file": "bat_0.26.1-1maemo3_armel.deb",
@@ -197,7 +197,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 76,
-  "size": 8194,
+  "size": 8172,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bf-interpreter_0.1-1maemo1_armel.deb",
@@ -220,7 +220,7 @@
    "libsdl2-image (>= 2.8)"
   ],
   "installed_kb": 1940,
-  "size": 888976,
+  "size": 888938,
   "maintainer": "elPytel (build of upstream Brogue CE)",
   "upstream": "https://github.com/tmewett/BrogueCE",
   "file": "brogue-ce_1.14.1-1maemo1_armel.deb",
@@ -242,7 +242,7 @@
    "xserver-xorg-input-evdev-mouse"
   ],
   "installed_kb": 164,
-  "size": 34626,
+  "size": 34528,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "bt-kbmouse_0.1-1maemo1_armel.deb",
@@ -262,7 +262,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1080,
-  "size": 605082,
+  "size": 605014,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "busybox37_1.37.0-1maemo1_armel.deb",
@@ -282,7 +282,7 @@
    "maemosec-certman-tools"
   ],
   "installed_kb": 532,
-  "size": 121028,
+  "size": 121004,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "ca-certs-n900_1.0-1maemo1_armel.deb",
@@ -305,7 +305,7 @@
    "libtinymail-camel-1.0-0"
   ],
   "installed_kb": 4608,
-  "size": 2141502,
+  "size": 2141474,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "camel-lite-ssl3_1.1.92cssu7-2maemo1_armel.deb",
@@ -325,7 +325,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 300,
-  "size": 110392,
+  "size": 110366,
   "maintainer": "elPytel",
   "upstream": "https://gitlab.com/jallbrit/cbonsai",
   "file": "cbonsai_1.4.2-1maemo2_armel.deb",
@@ -347,7 +347,7 @@
    "libc6"
   ],
   "installed_kb": 5140,
-  "size": 2419232,
+  "size": 2419204,
   "maintainer": "elPytel (build of upstream chess-tui by Thomas Mauran and contributors)",
   "upstream": "https://github.com/thomas-mauran/chess-tui",
   "file": "chess-tui_2.8.1-1maemo1_armel.deb",
@@ -359,7 +359,7 @@
  {
   "name": "chocolate-doom",
   "title": "Chocolate Doom",
-  "version": "3.1.1-1maemo2",
+  "version": "3.1.1-1maemo3",
   "section": "user/games",
   "short": "Chocolate Doom 3.1.1: Doom, Heretic, Hexen, Strife (needs an IWAD)",
   "description": "Chocolate Doom 3.1.1: a faithful source port of Doom, Heretic, Hexen and Strife on SDL 2 (GPL-2.0). The game data (an IWAD: doom.wad, doom2.wad, freedoom1.wad ...) is not in the package: copy it to /home/user/MyDocs/doom. The music is silent (no MIDI decoder in the SDL2_mixer of this repository), the sound effects work.\nUpstream: https://www.chocolate-doom.org/",
@@ -368,13 +368,15 @@
    "libsdl2 (>= 2.30)",
    "libsdl2-mixer (>= 2.8)"
   ],
-  "installed_kb": 3568,
-  "size": 1505854,
+  "installed_kb": 3572,
+  "size": 1506440,
   "maintainer": "elPytel (build of upstream Chocolate Doom)",
   "upstream": "https://www.chocolate-doom.org/",
-  "file": "chocolate-doom_3.1.1-1maemo2_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/chocolate-doom/chocolate-doom_3.1.1-1maemo2_armel.deb",
-  "other_versions": [],
+  "file": "chocolate-doom_3.1.1-1maemo3_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/chocolate-doom/chocolate-doom_3.1.1-1maemo3_armel.deb",
+  "other_versions": [
+   "3.1.1-1maemo2"
+  ],
   "icon": "/assets/packages/icons/chocolate-doom.png",
   "install": true
  },
@@ -390,7 +392,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 164,
-  "size": 38380,
+  "size": 38340,
   "maintainer": "elPytel",
   "upstream": "https://github.com/abishekvashok/cmatrix",
   "file": "cmatrix_2.0-1maemo2_armel.deb",
@@ -413,7 +415,7 @@
    "libpulse0"
   ],
   "installed_kb": 5376,
-  "size": 2489034,
+  "size": 2489006,
   "maintainer": "elPytel (build of upstream cmus by Timo Hirvonen, Kevin Ko and contributors)",
   "upstream": "https://cmus.github.io",
   "file": "cmus_2.13.0-1maemo1_armel.deb",
@@ -434,7 +436,7 @@
    "curl"
   ],
   "installed_kb": 11388,
-  "size": 4444104,
+  "size": 4444060,
   "maintainer": "elPytel (build of upstream cointop by Miguel Mota and contributors)",
   "upstream": "https://github.com/cointop-sh/cointop",
   "file": "cointop_1.6.10-1maemo1_armel.deb",
@@ -454,7 +456,7 @@
    "python3.11"
   ],
   "installed_kb": 3004,
-  "size": 881952,
+  "size": 881850,
   "maintainer": "elPytel",
   "upstream": "github.com/9001/copyparty",
   "file": "copyparty_1.20.26-1maemo2_armel.deb",
@@ -476,7 +478,7 @@
    "copyparty (>= 1.20.26-1maemo2)"
   ],
   "installed_kb": 108,
-  "size": 20026,
+  "size": 20024,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "copyparty-hildon_0.1-1maemo1_armel.deb",
@@ -496,7 +498,7 @@
    "libc6 (>= 2.5.1-1eglibc27)"
   ],
   "installed_kb": 1592,
-  "size": 852208,
+  "size": 852190,
   "maintainer": "elPytel",
   "upstream": "https://curl.se/",
   "file": "curl_8.23.0-1maemo2_armel.deb",
@@ -510,7 +512,7 @@
  {
   "name": "devilutionx",
   "title": "DevilutionX",
-  "version": "1.5.5-1maemo1",
+  "version": "1.5.5-1maemo4",
   "section": "user/games",
   "short": "DevilutionX 1.5.5: the Diablo 1 engine (needs DIABDAT.MPQ or spawn.mpq)",
   "description": "DevilutionX 1.5.5: an engine for Diablo 1 (the game data, DIABDAT.MPQ or the shareware spawn.mpq, is not in the package: copy it to ~/.local/share/diasurgical/devilution/). No network play. Heavy for the phone: try it on the shareware first.\nUpstream: https://github.com/diasurgical/devilutionX",
@@ -520,12 +522,15 @@
    "libsdl2-image (>= 2.8)"
   ],
   "installed_kb": 8700,
-  "size": 7074040,
+  "size": 7074436,
   "maintainer": "elPytel (build of upstream DevilutionX)",
   "upstream": "https://github.com/diasurgical/devilutionX",
-  "file": "devilutionx_1.5.5-1maemo1_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/devilutionx/devilutionx_1.5.5-1maemo1_armel.deb",
-  "other_versions": [],
+  "file": "devilutionx_1.5.5-1maemo4_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/devilutionx/devilutionx_1.5.5-1maemo4_armel.deb",
+  "other_versions": [
+   "1.5.5-1maemo2",
+   "1.5.5-1maemo1"
+  ],
   "icon": "/assets/packages/icons/devilutionx.png",
   "install": true
  },
@@ -540,7 +545,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 396,
-  "size": 189810,
+  "size": 189752,
   "maintainer": "elPytel (build of upstream dialog by Thomas E. Dickey)",
   "upstream": "https://invisible-island.net/dialog/",
   "file": "dialog_1.3-20260721-1maemo1_armel.deb",
@@ -560,7 +565,7 @@
    "libc6"
   ],
   "installed_kb": 3028,
-  "size": 1408664,
+  "size": 1408644,
   "maintainer": "elPytel (build of upstream fd by David Peter and contributors)",
   "upstream": "https://github.com/sharkdp/fd",
   "file": "fd_10.5.2-1maemo2_armel.deb",
@@ -604,7 +609,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 10800,
-  "size": 553656,
+  "size": 553616,
   "maintainer": "elPytel (build of upstream file by Christos Zoulas and contributors)",
   "upstream": "https://www.darwinsys.com/file/",
   "file": "file_5.48-1maemo1_armel.deb",
@@ -624,7 +629,7 @@
    "libc6"
   ],
   "installed_kb": 4500,
-  "size": 1813868,
+  "size": 1813842,
   "maintainer": "elPytel (build of upstream fzf by Junegunn Choi and contributors)",
   "upstream": "https://github.com/junegunn/fzf",
   "file": "fzf_0.75.0-1maemo2_armel.deb",
@@ -647,7 +652,7 @@
    "curl (>= 8.23.0)"
   ],
   "installed_kb": 21424,
-  "size": 11476548,
+  "size": 11476394,
   "maintainer": "elPytel",
   "upstream": "https://git-scm.com/",
   "file": "git_2.56.0-1maemo3_armel.deb",
@@ -657,6 +662,134 @@
    "1:2.56.0-1maemo2"
   ],
   "icon": "/assets/packages/icons/git.png",
+  "install": true
+ },
+ {
+  "name": "gothi",
+  "title": "gothi",
+  "version": "0.8.1-1maemo1",
+  "section": "user/utilities",
+  "short": "A Flipper Zero style interface: menu, clock, battery, animations (keyboard and touch)",
+  "description": "gothi shows the 128x64 one-bit screen of the Flipper Zero with its original graphics and six keys: with the keyboard slid out the screen fills the display and the arrows, Enter and Backspace control it, with the keyboard closed there is a cross and a Back button for the touch screen. Applications: clock, battery, key test, a player of the firmware animations. Colour and screen size are set in Settings.\nWritten in Python 3 (SDL 2 through PySDL2). The graphics of the Flipper Zero firmware (GPL-3.0, Flipper Devices Inc.) are included; this package is not affiliated with Flipper Devices.\nUpstream: https://github.com/n900-resurrection/n900-gothi",
+  "depends": [
+   "python3.11",
+   "python3-pysdl2 (>= 0.9.17)",
+   "libsdl2 (>= 2.30)"
+  ],
+  "installed_kb": 4836,
+  "size": 671808,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/n900-resurrection/n900-gothi",
+  "file": "gothi_0.8.1-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gothi/gothi_0.8.1-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gothi.png",
+  "install": true
+ },
+ {
+  "name": "gothi-copyparty",
+  "title": "gothi: file server switch",
+  "version": "0.2.0-1maemo1",
+  "section": "user/utilities",
+  "short": "Module for gothi: switch the file server (copyparty) on and off",
+  "description": "Adds the entry File server to the menu Modules of gothi (restart gothi after the installation): the screen shows whether the file server runs, OK starts or stops it and the address to type in the browser of your computer is shown while it runs.\nIt only calls the command copyparty-share of the package copyparty; nothing else is installed.\nUpstream: https://github.com/n900-resurrection/nokia-n900-apps",
+  "depends": [
+   "gothi (>= 0.5.1)",
+   "copyparty",
+   "curl"
+  ],
+  "installed_kb": 28,
+  "size": 3706,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/n900-resurrection/nokia-n900-apps",
+  "file": "gothi-copyparty_0.2.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gothi-copyparty/gothi-copyparty_0.2.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gothi-copyparty.png",
+  "install": true
+ },
+ {
+  "name": "gothi-gps",
+  "title": "gothi: GPS",
+  "version": "0.1.0-1maemo1",
+  "section": "user/utilities",
+  "short": "Module for gothi: data of the GPS (fix, satellites, position, speed)",
+  "description": "Adds the entry GPS to the menu Modules of gothi (restart gothi after the installation): the screen shows whether the GPS has a fix, the satellites in view and in use and, with a fix, the position, altitude, speed and track. The GPS is switched on while the page is open and off when you leave it.\nIt needs a view of the sky (it does not work in a flat). The GPS is started with the satellite method only, nothing is sent to a server. The system switch of the GPS (Settings, Location) is turned on for the time of the run and put back afterwards.\nUpstream: https://github.com/n900-resurrection/nokia-n900-apps",
+  "depends": [
+   "gothi (>= 0.7.0)",
+   "python-location"
+  ],
+  "installed_kb": 32,
+  "size": 2618,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/n900-resurrection/nokia-n900-apps",
+  "file": "gothi-gps_0.1.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gothi-gps/gothi-gps_0.1.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gothi-gps.png",
+  "install": true
+ },
+ {
+  "name": "gothi-ssh",
+  "title": "gothi: SSH switch",
+  "version": "0.1.0-1maemo1",
+  "section": "user/utilities",
+  "short": "Module for gothi: switch the SSH server on and off",
+  "description": "Adds the entry SSH server to the menu Modules of gothi (restart gothi after the installation): the screen shows whether the SSH server of the system (port 22) runs, OK starts or stops it, and the addresses to connect to are shown while it runs.\nSwitch it off on a public network: a stopped server accepts no new connections (a session that is open stays). It starts again at the next boot, as the system decides. It controls the server through sudo gainroot, the way every Maemo application gets root.\nUpstream: https://github.com/n900-resurrection/nokia-n900-apps",
+  "depends": [
+   "gothi (>= 0.5.1)",
+   "openssh-server"
+  ],
+  "installed_kb": 28,
+  "size": 3862,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/n900-resurrection/nokia-n900-apps",
+  "file": "gothi-ssh_0.1.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gothi-ssh/gothi-ssh_0.1.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gothi-ssh.png",
+  "install": true
+ },
+ {
+  "name": "gothi-timesync",
+  "title": "gothi: time sync",
+  "version": "0.1.0-1maemo1",
+  "section": "user/utilities",
+  "short": "Module for gothi: set the clock over NTP",
+  "description": "Adds the entry Sync time to the menu Modules of gothi (restart gothi after the installation): the screen shows the current time, OK sets the clock and the hardware clock over NTP with the command ntp-sync and shows what it did.\nThe phone often has a flat clock battery and no operator time, so the clock is wrong after every restart and TLS stops working. It runs ntp-sync through sudo gainroot, the way every Maemo application gets root.\nUpstream: https://github.com/n900-resurrection/nokia-n900-apps",
+  "depends": [
+   "gothi (>= 0.5.0)",
+   "ntp-sync"
+  ],
+  "installed_kb": 28,
+  "size": 3806,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/n900-resurrection/nokia-n900-apps",
+  "file": "gothi-timesync_0.1.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gothi-timesync/gothi-timesync_0.1.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gothi-timesync.png",
+  "install": true
+ },
+ {
+  "name": "gothi-tiny",
+  "title": "gothi: ask the dolphin",
+  "version": "0.1.0-1maemo1",
+  "section": "user/utilities",
+  "short": "Module for gothi: ask a question, TINY answers in a speech bubble",
+  "description": "Adds the entry Ask the dolphin to the menu Modules of gothi (restart gothi after the installation): type a question on the keyboard (slide it out), press Enter and the dolphin answers in a speech bubble. The answers come from TINY, a neural network with 367,000 weights that knows about 3,500 facts (countries, animals, space, the body, simple sums, words); on other questions it can answer confidently and be wrong, and that is part of the fun.\nIt only calls the command tiny of the package tiny in its plain text mode; the network runs on the phone, nothing is sent anywhere.\nUpstream: https://github.com/n900-resurrection/nokia-n900-apps",
+  "depends": [
+   "gothi (>= 0.8.0)",
+   "tiny"
+  ],
+  "installed_kb": 32,
+  "size": 4402,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/n900-resurrection/nokia-n900-apps",
+  "file": "gothi-tiny_0.1.0-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/gothi-tiny/gothi-tiny_0.1.0-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/gothi-tiny.png",
   "install": true
  },
  {
@@ -681,7 +814,7 @@
    "quickjs"
   ],
   "installed_kb": 2760,
-  "size": 633990,
+  "size": 632614,
   "maintainer": "elPytel (build of upstream gPodder by Thomas Perl)",
   "upstream": "http://gpodder.org/",
   "file": "gpodder_2.20.3-2maemo4_armel.deb",
@@ -704,7 +837,7 @@
    "libc6"
   ],
   "installed_kb": 22776,
-  "size": 9751782,
+  "size": 9751738,
   "maintainer": "elPytel (build of upstream gurk-rs by boxdot and contributors)",
   "upstream": "https://github.com/boxdot/gurk-rs",
   "file": "gurk_0.10.2-1maemo1_armel.deb",
@@ -724,7 +857,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 528,
-  "size": 224330,
+  "size": 224282,
   "maintainer": "elPytel",
   "upstream": "https://github.com/htop-dev/htop",
   "file": "htop3_3.5.3-1maemo2_armel.deb",
@@ -749,7 +882,7 @@
    "curl"
   ],
   "installed_kb": 152,
-  "size": 33498,
+  "size": 33474,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "ical-sync_0.1-1maemo2_armel.deb",
@@ -772,7 +905,7 @@
    "curl"
   ],
   "installed_kb": 6432,
-  "size": 2731204,
+  "size": 2731142,
   "maintainer": "elPytel (build of upstream irssi by the Irssi project)",
   "upstream": "https://irssi.org",
   "file": "irssi_1.4.5-1maemo1_armel.deb",
@@ -792,7 +925,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 852,
-  "size": 345526,
+  "size": 345500,
   "maintainer": "elPytel",
   "upstream": "https://jqlang.org/",
   "file": "jq_1.8.2-1maemo2_armel.deb",
@@ -814,7 +947,7 @@
    "libc6 (>= 2.4)"
   ],
   "installed_kb": 584,
-  "size": 227796,
+  "size": 227784,
   "maintainer": "elPytel (build of upstream less by Mark Nudelman)",
   "upstream": "https://www.greenwoodsoftware.com/less/",
   "file": "less_710-1maemo1_armel.deb",
@@ -834,7 +967,7 @@
    "libc6"
   ],
   "installed_kb": 5736,
-  "size": 2246602,
+  "size": 2246558,
   "maintainer": "elPytel (build of upstream lf by Gokcehan Kara and contributors)",
   "upstream": "https://github.com/gokcehan/lf",
   "file": "lf_41-1maemo1_armel.deb",
@@ -846,7 +979,7 @@
  {
   "name": "libsdl2",
   "title": "SDL 2",
-  "version": "2.30.11-1maemo2",
+  "version": "2.30.11-1maemo4",
   "section": "user/development",
   "short": "SDL 2.30.11: the library of games that need SDL 2 (X11, ALSA, PulseAudio)",
   "description": "Simple DirectMedia Layer 2.30.11 for Maemo 5, in /opt/sdl2/lib (the system SDL 1.2 stays). Video through X11 with a software surface (no OpenGL or GLES), sound through ALSA or PulseAudio (SDL_AUDIODRIVER=alsa|pulseaudio), no joystick. Games built against it link with -Wl,-rpath,/opt/sdl2/lib. The command sdl2-info lists the drivers; sdl2-info --window and --beep test drawing and sound.\nUpstream: https://libsdl.org/",
@@ -855,12 +988,14 @@
    "libx11-6"
   ],
   "installed_kb": 1288,
-  "size": 508116,
+  "size": 508200,
   "maintainer": "elPytel (build of upstream SDL by Sam Lantinga and contributors)",
   "upstream": "https://libsdl.org/",
-  "file": "libsdl2_2.30.11-1maemo2_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/libsdl2/libsdl2_2.30.11-1maemo2_armel.deb",
-  "other_versions": [],
+  "file": "libsdl2_2.30.11-1maemo4_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/libsdl2/libsdl2_2.30.11-1maemo4_armel.deb",
+  "other_versions": [
+   "2.30.11-1maemo2"
+  ],
   "icon": "/assets/packages/icons/libsdl2.png",
   "install": true
  },
@@ -876,7 +1011,7 @@
    "libsdl2 (>= 2.30)"
   ],
   "installed_kb": 128,
-  "size": 54492,
+  "size": 54474,
   "maintainer": "elPytel (build of upstream SDL_image by Sam Lantinga and contributors)",
   "upstream": "https://github.com/libsdl-org/SDL_image",
   "file": "libsdl2-image_2.8.8-1maemo1_armel.deb",
@@ -897,7 +1032,7 @@
    "libsdl2 (>= 2.30)"
   ],
   "installed_kb": 280,
-  "size": 131710,
+  "size": 131692,
   "maintainer": "elPytel (build of upstream SDL_mixer by Sam Lantinga and contributors)",
   "upstream": "https://github.com/libsdl-org/SDL_mixer",
   "file": "libsdl2-mixer_2.8.1-1maemo1_armel.deb",
@@ -918,7 +1053,7 @@
    "libsdl2 (>= 2.30)"
   ],
   "installed_kb": 668,
-  "size": 355630,
+  "size": 355622,
   "maintainer": "elPytel (build of upstream SDL_ttf by Sam Lantinga and contributors)",
   "upstream": "https://github.com/libsdl-org/SDL_ttf",
   "file": "libsdl2-ttf_2.24.0-1maemo1_armel.deb",
@@ -941,7 +1076,7 @@
    "signal-bridge"
   ],
   "installed_kb": 128,
-  "size": 21054,
+  "size": 21026,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "libsignal-purple_0.1-1maemo1_armel.deb",
@@ -962,7 +1097,7 @@
    "zlib1g"
   ],
   "installed_kb": 4800,
-  "size": 2351660,
+  "size": 2351604,
   "maintainer": "elPytel (build of upstream Links by Mikulas Patocka and contributors)",
   "upstream": "http://links.twibright.com",
   "file": "links_2.30-1maemo2_armel.deb",
@@ -987,7 +1122,7 @@
    "curl"
   ],
   "installed_kb": 116,
-  "size": 22278,
+  "size": 22264,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "llama-chat_0.1-1maemo2_armel.deb",
@@ -1008,7 +1143,7 @@
    "curl"
   ],
   "installed_kb": 1688,
-  "size": 1254744,
+  "size": 1254690,
   "maintainer": "elPytel",
   "upstream": "https://github.com/karpathy/llama2.c",
   "file": "llama2c_0.0.20240529-1maemo2_armel.deb",
@@ -1055,7 +1190,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1636,
-  "size": 652492,
+  "size": 652448,
   "maintainer": "elPytel",
   "upstream": "https://mandoc.bsd.lv/",
   "file": "mandoc_1.14.6-1maemo2_armel.deb",
@@ -1075,7 +1210,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 4060,
-  "size": 1145852,
+  "size": 1145758,
   "maintainer": "elPytel (build of upstream mc by the Midnight Commander team)",
   "upstream": "https://midnight-commander.org",
   "file": "mc_4.8.33-1maemo2_armel.deb",
@@ -1097,7 +1232,7 @@
    "libc6"
   ],
   "installed_kb": 20324,
-  "size": 10116406,
+  "size": 10116426,
   "maintainer": "elPytel (build of upstream mdcat by Sebastian Wiesner and contributors)",
   "upstream": "https://github.com/swsnr/mdcat",
   "file": "mdcat_2.20.2-1maemo1_armel.deb",
@@ -1117,7 +1252,7 @@
    "libc6"
   ],
   "installed_kb": 12532,
-  "size": 4947010,
+  "size": 4946938,
   "maintainer": "elPytel (build of upstream micro by Zachary Yedidia and contributors)",
   "upstream": "https://micro-editor.github.io",
   "file": "micro_2.0.15-1maemo2_armel.deb",
@@ -1140,7 +1275,7 @@
    "libnspr4"
   ],
   "installed_kb": 2800,
-  "size": 1346312,
+  "size": 1346226,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "microb-nss_3.28.6-1maemo2_armel.deb",
@@ -1161,7 +1296,7 @@
    "curl"
   ],
   "installed_kb": 3484,
-  "size": 1714736,
+  "size": 1714710,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "msmtp_1.8.34-1maemo2_armel.deb",
@@ -1185,7 +1320,7 @@
    "msmtp"
   ],
   "installed_kb": 4244,
-  "size": 2088112,
+  "size": 2088074,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "mutt_2.4.3-1maemo3_armel.deb",
@@ -1214,7 +1349,7 @@
    "mutt"
   ],
   "installed_kb": 132,
-  "size": 29438,
+  "size": 29406,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "mutt-hildon_0.4-1maemo1_armel.deb",
@@ -1238,7 +1373,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1024,
-  "size": 332386,
+  "size": 332288,
   "maintainer": "elPytel",
   "upstream": "https://www.nano-editor.org",
   "file": "nano_9.3-1maemo1_armel.deb",
@@ -1259,7 +1394,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 192,
-  "size": 49776,
+  "size": 49718,
   "maintainer": "elPytel (build of upstream ncdu by Yoran Heling)",
   "upstream": "https://dev.yorhel.nl/ncdu",
   "file": "ncdu_1.22-1maemo1_armel.deb",
@@ -1283,7 +1418,7 @@
    "ffmpeg"
   ],
   "installed_kb": 140,
-  "size": 25966,
+  "size": 25962,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "notpipe-hildon_0.1-1maemo5_armel.deb",
@@ -1304,7 +1439,7 @@
    "libsdl1.2"
   ],
   "installed_kb": 5376,
-  "size": 2527950,
+  "size": 2527944,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "nplay_0.1-1maemo3_armel.deb",
@@ -1327,7 +1462,7 @@
    "busybox"
   ],
   "installed_kb": 60,
-  "size": 6146,
+  "size": 6126,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "ntp-sync_0.2-1maemo1_armel.deb",
@@ -1352,7 +1487,7 @@
    "libsdl2-mixer (>= 2.8)"
   ],
   "installed_kb": 7916,
-  "size": 1635450,
+  "size": 1622564,
   "maintainer": "elPytel (build of upstream NXEngine-evo)",
   "upstream": "https://github.com/nxengine/nxengine-evo",
   "file": "nxengine-evo_2.6.5.1-1maemo1_armel.deb",
@@ -1375,7 +1510,7 @@
    "less"
   ],
   "installed_kb": 8704,
-  "size": 2810520,
+  "size": 2810226,
   "maintainer": "elPytel (packaging of upstream offpunk by Ploum and contributors)",
   "upstream": "https://offpunk.net",
   "file": "offpunk_3.1-1maemo1_armel.deb",
@@ -1395,7 +1530,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 25100,
-  "size": 11576054,
+  "size": 11575878,
   "maintainer": "elPytel (build of upstream OpenSSH by the OpenBSD project)",
   "upstream": "",
   "file": "openssh_10.6p2-1maemo2_armel.deb",
@@ -1420,7 +1555,7 @@
    "libsdl-image1.2"
   ],
   "installed_kb": 5452,
-  "size": 1994204,
+  "size": 1993322,
   "maintainer": "elPytel",
   "upstream": "https://openxcom.org",
   "file": "openxcom_1.0-1maemo1_armel.deb",
@@ -1441,7 +1576,7 @@
    "curl"
   ],
   "installed_kb": 10532,
-  "size": 4660700,
+  "size": 4660620,
   "maintainer": "elPytel (build of upstream Profanity by James Booth and contributors)",
   "upstream": "https://profanity-im.github.io",
   "file": "profanity_0.19.0-1maemo1_armel.deb",
@@ -1463,7 +1598,7 @@
    "telepathy-haze"
   ],
   "installed_kb": 120,
-  "size": 15402,
+  "size": 15366,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "purple-echo_0.1-1maemo1_armel.deb",
@@ -1483,7 +1618,7 @@
    "python3.11"
   ],
   "installed_kb": 96,
-  "size": 15196,
+  "size": 15182,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "python3-hildonlite_0.5.0-1maemo1_armel.deb",
@@ -1494,6 +1629,27 @@
    "0.1.0-1maemo1"
   ],
   "icon": "/assets/packages/icons/python3-hildonlite.png",
+  "install": true
+ },
+ {
+  "name": "python3-pysdl2",
+  "title": "PySDL2 (Python 3)",
+  "version": "0.9.17-1maemo1",
+  "section": "user/development",
+  "short": "Python 3 bindings of SDL 2 (ctypes, pure Python)",
+  "description": "PySDL2 0.9.17: SDL 2 from Python 3 through ctypes (windows, events, surfaces, audio). Public domain / zlib.\nIt finds libSDL2 of the package libsdl2 in /opt/sdl2/lib only when PYSDL2_DLL_PATH=/opt/sdl2/lib is set: export it before 'import sdl2'.\nUpstream: https://github.com/py-sdl/py-sdl2",
+  "depends": [
+   "python3.11",
+   "libsdl2 (>= 2.30)"
+  ],
+  "installed_kb": 3924,
+  "size": 524692,
+  "maintainer": "elPytel",
+  "upstream": "https://github.com/py-sdl/py-sdl2",
+  "file": "python3-pysdl2_0.9.17-1maemo1_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/python3-pysdl2/python3-pysdl2_0.9.17-1maemo1_armel.deb",
+  "other_versions": [],
+  "icon": "/assets/packages/icons/python3-pysdl2.png",
   "install": true
  },
  {
@@ -1508,7 +1664,7 @@
    "curl"
   ],
   "installed_kb": 72284,
-  "size": 23765844,
+  "size": 23758378,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "python3.11_3.11.18-2maemo1_armel.deb",
@@ -1528,7 +1684,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 884,
-  "size": 438282,
+  "size": 438264,
   "maintainer": "elPytel",
   "upstream": "https://bellard.org/quickjs/",
   "file": "quickjs_2026.06.04-1maemo1_armel.deb",
@@ -1548,7 +1704,7 @@
    "python3.11"
   ],
   "installed_kb": 2208,
-  "size": 585446,
+  "size": 584702,
   "maintainer": "elPytel (build of upstream ranger by Roman Zimbelmann and contributors)",
   "upstream": "https://ranger.fm/",
   "file": "ranger_1.9.4-1maemo4_armel.deb",
@@ -1572,7 +1728,7 @@
    "libc6"
   ],
   "installed_kb": 4120,
-  "size": 1797300,
+  "size": 1797274,
   "maintainer": "elPytel (build of upstream ripgrep by Andrew Gallant and contributors)",
   "upstream": "https://github.com/BurntSushi/ripgrep",
   "file": "ripgrep_15.2.0-1maemo2_armel.deb",
@@ -1594,7 +1750,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 660,
-  "size": 372874,
+  "size": 372844,
   "maintainer": "elPytel (build of upstream rsync by Andrew Tridgell, Wayne Davison and contributors)",
   "upstream": "https://rsync.samba.org",
   "file": "rsync_3.5.2-1maemo2_armel.deb",
@@ -1617,7 +1773,7 @@
    "libncurses5"
   ],
   "installed_kb": 464,
-  "size": 242014,
+  "size": 241984,
   "maintainer": "elPytel (build of GNU screen)",
   "upstream": "https://www.gnu.org/software/screen",
   "file": "screen_5.0.2-1maemo2_armel.deb",
@@ -1642,7 +1798,7 @@
    "libomap3cam"
   ],
   "installed_kb": 104,
-  "size": 19500,
+  "size": 19462,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "selfie_0.6-1maemo1_armel.deb",
@@ -1664,7 +1820,7 @@
    "curl"
   ],
   "installed_kb": 508,
-  "size": 102700,
+  "size": 102626,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "sfeed_2.4-1maemo4_armel.deb",
@@ -1691,7 +1847,7 @@
    "curl"
   ],
   "installed_kb": 124,
-  "size": 29822,
+  "size": 29802,
   "maintainer": "elPytel",
   "upstream": "this",
   "file": "sfeed-hildon_0.1-1maemo4_armel.deb",
@@ -1705,7 +1861,7 @@
  {
   "name": "sgt-puzzles",
   "title": "Puzzles",
-  "version": "20250730-1maemo1",
+  "version": "20250730-1maemo3",
   "section": "user/games",
   "short": "Simon Tatham's Portable Puzzle Collection: 40 logic puzzles",
   "description": "Simon Tatham's Portable Puzzle Collection (20250730): Net, Mines, Towers, Loopy, Solo (Sudoku), Pattern, Map, Tents, Bridges, Galaxies and 30 more logic puzzles, each with endless random games, hints, undo and saving. The menu entry Puzzles lists them in big buttons; every puzzle is also a program, /usr/bin/sgt-<name> (sgt-net, sgt-mines, ...). Every puzzle has a Type menu for the size and difficulty and a Help menu with its rules and controls.\nGTK 2 build for Maemo 5, MIT licence. Upstream: https://www.chiark.greenend.org.uk/~sgtatham/puzzles/",
@@ -1714,13 +1870,15 @@
    "libgtk2.0-0",
    "libhildon1"
   ],
-  "installed_kb": 6592,
-  "size": 3111562,
+  "installed_kb": 6604,
+  "size": 3115042,
   "maintainer": "elPytel (build of upstream puzzles by Simon Tatham)",
   "upstream": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/",
-  "file": "sgt-puzzles_20250730-1maemo1_armel.deb",
-  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/sgt-puzzles/sgt-puzzles_20250730-1maemo1_armel.deb",
-  "other_versions": [],
+  "file": "sgt-puzzles_20250730-1maemo3_armel.deb",
+  "url": "https://n900-resurrection.github.io/n900-repository/pool/main/sgt-puzzles/sgt-puzzles_20250730-1maemo3_armel.deb",
+  "other_versions": [
+   "20250730-1maemo1"
+  ],
   "icon": "/assets/packages/icons/sgt-puzzles.png",
   "install": true
  },
@@ -1735,7 +1893,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 14784,
-  "size": 6486216,
+  "size": 6486192,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "signal-bridge_0.1.0-1maemo1_armel.deb",
@@ -1755,7 +1913,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 248,
-  "size": 91156,
+  "size": 91126,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "smb_0.1-1maemo2_armel.deb",
@@ -1777,7 +1935,7 @@
    "libc6"
   ],
   "installed_kb": 1232,
-  "size": 515058,
+  "size": 515060,
   "maintainer": "elPytel (build of upstream Stockfish by the Stockfish developers)",
   "upstream": "https://github.com/official-stockfish/Stockfish",
   "file": "stockfish_11-1maemo1_armel.deb",
@@ -1797,7 +1955,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1048,
-  "size": 401408,
+  "size": 401364,
   "maintainer": "elPytel (build of upstream strace by the strace project)",
   "upstream": "https://strace.io",
   "file": "strace_6.19-1maemo1_armel.deb",
@@ -1817,7 +1975,7 @@
    "ncurses-base"
   ],
   "installed_kb": 52,
-  "size": 5470,
+  "size": 5450,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "terminfo-256color_1.0-1maemo2_armel.deb",
@@ -1840,7 +1998,7 @@
    "git"
   ],
   "installed_kb": 828,
-  "size": 294234,
+  "size": 294194,
   "maintainer": "elPytel (build of upstream tig by Jonas Fonseca and contributors)",
   "upstream": "https://jonas.github.io/tig",
   "file": "tig_2.6.1-1maemo2_armel.deb",
@@ -1864,7 +2022,7 @@
    "terminfo-256color"
   ],
   "installed_kb": 688,
-  "size": 471732,
+  "size": 471670,
   "maintainer": "elPytel",
   "upstream": "https://github.com/WollyMonjac/Tiny-2.1",
   "file": "tiny_2.1-1maemo2_armel.deb",
@@ -1885,7 +2043,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 1344,
-  "size": 540278,
+  "size": 540230,
   "maintainer": "elPytel (build of upstream tmux by Nicholas Marriott and contributors)",
   "upstream": "https://github.com/tmux/tmux",
   "file": "tmux_3.8-1maemo1_armel.deb",
@@ -1906,7 +2064,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 136,
-  "size": 23452,
+  "size": 23416,
   "maintainer": "elPytel",
   "upstream": "https://github.com/xorg62/tty-clock",
   "file": "tty-clock_2.3-1maemo2_armel.deb",
@@ -1929,7 +2087,7 @@
    "libncurses5 (>= 5.7)"
   ],
   "installed_kb": 31736,
-  "size": 7572370,
+  "size": 7571942,
   "maintainer": "elPytel",
   "upstream": "https://www.vim.org",
   "file": "vim9_9.2.1302-1maemo1_armel.deb",
@@ -1950,7 +2108,7 @@
    "libsdl1.2"
   ],
   "installed_kb": 264,
-  "size": 105764,
+  "size": 105738,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "vlak_2.20-1maemo1_armel.deb",
@@ -1971,7 +2129,7 @@
    "curl"
   ],
   "installed_kb": 11140,
-  "size": 5594754,
+  "size": 5571048,
   "maintainer": "elPytel (build of upstream WeeChat by Sébastien Helleu)",
   "upstream": "https://weechat.org",
   "file": "weechat_4.10.4-1maemo1_armel.deb",
@@ -1992,7 +2150,7 @@
    "curl"
   ],
   "installed_kb": 3832,
-  "size": 1910618,
+  "size": 1910590,
   "maintainer": "elPytel",
   "upstream": "",
   "file": "wget_1.25.0-1maemo2_armel.deb",
@@ -2014,7 +2172,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 276,
-  "size": 89170,
+  "size": 89128,
   "maintainer": "elPytel (build of upstream newt by Red Hat and contributors)",
   "upstream": "https://pagure.io/newt",
   "file": "whiptail_0.52.25-1maemo2_armel.deb",
@@ -2036,7 +2194,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 3180,
-  "size": 1325984,
+  "size": 1325954,
   "maintainer": "elPytel (build of upstream wireguard-go and wireguard-tools by Jason A. Donenfeld)",
   "upstream": "https://www.wireguard.com",
   "file": "wireguard-go_0.0.20250522-1maemo1_armel.deb",
@@ -2057,7 +2215,7 @@
    "zlib1g"
   ],
   "installed_kb": 864,
-  "size": 273662,
+  "size": 273634,
   "maintainer": "elPytel",
   "upstream": "https://github.com/davidgiven/wordgrinder",
   "file": "wordgrinder_0.8-1maemo2_armel.deb",
@@ -2079,7 +2237,7 @@
    "libc6 (>= 2.5)"
   ],
   "installed_kb": 1832,
-  "size": 863068,
+  "size": 863042,
   "maintainer": "elPytel",
   "upstream": "https://gitlab.gnome.org/GNOME/libxml2",
   "file": "xml-tools_2.15.4-1maemo2_armel.deb",
